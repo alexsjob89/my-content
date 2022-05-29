@@ -24,8 +24,18 @@ const createHeart = (e) => {
     const x = e.clientX
     const y = e.clientY
 
-    const leftOffset = e.target.leftOffset
-    const leftOffset = e.target.leftOffset
+    const leftOffset = e.target.offsetLest
+    const topOffset = e.target.offsetTop
 
-    console.log(x, y);
+    const xInside = x - leftOffset
+    const yInside = y - topOffset
+
+    heart.style.top = `${yInside}`
+    heart.style.left = `${xInside}`
+
+    loveMe.appendChild(heart)
+
+    times.innerHTML = ++timesClicked
+
+    setTimeout(() => heart.remove(), 1000)
 }
