@@ -4,50 +4,21 @@
 }
 
 body {
-    text-align: center;
+    background-color: darksalmon;
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
     overflow: hidden;
     margin: 0;
 }
 
-h3 {
-    margin-bottom: 0;
-    text-align: center;
-}
-
-small {
-    display: block;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.fa-heart {
-    color: red;
-}
-
-.loveMe {
-    height: 440px;
-    width: 300px;
-    background: url('images/Photo\ 1-Vorster-Alpenglow\ c.jpg');
-    margin: auto;
-    cursor: pointer;
-    margin: auto;
-    cursor: pointer;
-    max-width: 100%;
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.loveMe .fa-heart {
+div {
     position: absolute;
-    animation: grow 0.6s linear;
-    transform: translate(-50%, -50%) scale(0);
-}
-
-@keyframe grow {
-    to {
-        transform: translate(-50%, -50%) scale(10);
-        opacity: 0;
-    }
+    bottom: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
 }
