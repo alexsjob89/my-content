@@ -1,0 +1,45 @@
+{
+    "folders": [
+		{
+			"path": "../../Downloads/Visual Studio Code.app"
+		},
+		{
+			"path": "."
+		}
+	],
+    "settings": {
+        "editor.renderWhitespace": "none",
+        "editor.cursorStyle": "line",
+        "workbench.editor.enablePreview": true,
+        "editor.accessibilitySupport": "off",
+        "editor.hideCursorInOverviewRuler": false,
+        "editor.hover.above": true,
+        "editor.hover.enabled": true,
+        "editor.hover.sticky": true,
+        "editor.insertSpaces": true,
+        "editor.lightbulb.enabled": true,
+        "editor.matchBrackets": "always",
+        "editor.multiCursorMergeOverlapping": true,
+        "editor.occurrencesHighlight": true,
+        "editor.overviewRulerBorder": true,
+        "editor.renderControlCharacters": true,
+        "editor.renderFinalNewline": true,
+        "editor.renderLineHighlight": "line",
+        "editor.renderLineHighlightOnlyWhenFocus": false,
+        "editor.roundedSelection": true,
+        "editor.selectionHighlight": true,
+        "editor.showDeprecated": true,
+        "editor.showFoldingControls": "mouseover",
+        "editor.smartSelect.selectLeadingAndTrailingWhitespace": true,
+        "editor.stablePeek": false,
+        "editor.stickyTabStops": false,
+        "editor.trimAutoWhitespace": true,
+        "editor.unfoldOnClickAfterEndOfLine": false,
+        "editor.unicodeHighlight.ambiguousCharacters": true,
+        "editor.unicodeHighlight.invisibleCharacters": true,
+        "editor.useTabStops": true,
+        "editor.cursorBlinking": "solid",
+        "editor.cursorSmoothCaretAnimation": true,
+        "editor.cursorWidth": 0
+    }
+}

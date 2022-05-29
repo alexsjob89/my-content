@@ -1,0 +1,44 @@
+body {
+    justify-content: center;
+    padding-top: 200px;
+    text-align: center;
+    flex: auto;
+    background-color: lightgrey;
+}
+
+.btn {
+    border-color: black;
+    border-radius: 10px;
+    margin: 10px;
+    height: 40px;
+    width: 100px;
+    color: black;
+    font-size: 20px;
+    box-shadow: 4px 2px;
+}
+
+.value {
+    font-size: 80px;
+    font-style: inherit;
+    font-weight: 1000;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 400;
+    font-family: italic;
+}
+
+.container {
+    background-color: lightblue;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: lightblue;
+}
