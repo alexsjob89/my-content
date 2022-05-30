@@ -53,6 +53,9 @@ h2 {
     position: absolute;
     top: 5px;
     right: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
 }
 
 .btn {
@@ -67,4 +70,11 @@ h2 {
 .btn-large {
     display: block;
     width: 100%;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
 }
