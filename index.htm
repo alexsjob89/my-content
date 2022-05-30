@@ -6,15 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/305c75402b.js" crossorigin="anonymous"></script>
-    <title>Double Click Heart</title>
+    <title>Password Generator</title>
 </head>
 
 <body>
-    <h1 id="text">Starting...</h1>
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="result-container">
+            <span class="result"></span>
+            <button class="btn" id="clipboard">
+             <i class="far far-clipboard"></i>
+         </button>
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label>Password length</label>
+                <input type="number" id="length" min="4" max="20" value="20">
+            </div>
+            <div class="setting">
+                <label>Include uppercase letters</label>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
 
-    <div>
-        <label for="speed">Speed</label>
-        <input type="number" name="speed" id="speed" value="1" min="1" max="10" step="1">
+            <div class="setting">
+                <label>Include uppercase letters</label>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+
+            <div class="setting">
+                <label>Include uppercase letters</label>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+
+            <div class="setting">
+                <label>Include uppercase letters</label>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
