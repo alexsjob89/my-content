@@ -13,9 +13,9 @@
     <div class="container">
         <h2>Password Generator</h2>
         <div class="result-container">
-            <span class="result"></span>
+            <span id="result"></span>
             <button class="btn" id="clipboard">
-             <i class="far far-clipboard"></i>
+             <i class="far fa-clipboard"></i>
          </button>
         </div>
         <div class="settings">
@@ -29,20 +29,24 @@
             </div>
 
             <div class="setting">
-                <label>Include uppercase letters</label>
-                <input type="checkbox" id="uppercase" checked>
+                <label>Include lowercase letters</label>
+                <input type="checkbox" id="lowercase" checked>
             </div>
 
             <div class="setting">
-                <label>Include uppercase letters</label>
-                <input type="checkbox" id="uppercase" checked>
+                <label>Include numbers</label>
+                <input type="checkbox" id="numbers" checked>
             </div>
 
             <div class="setting">
-                <label>Include uppercase letters</label>
-                <input type="checkbox" id="uppercase" checked>
+                <label>Include symbols</label>
+                <input type="checkbox" id="symbols" checked>
             </div>
         </div>
+
+        <button class="btn btn-large" id="generate">
+            Generate Password
+        </button>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

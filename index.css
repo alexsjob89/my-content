@@ -4,7 +4,8 @@
 }
 
 body {
-    background-color: lightpink;
+    background-color: #1064da;
+    color: #fff;
     font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
@@ -12,5 +13,33 @@ body {
     justify-content: center;
     height: 100vh;
     overflow: hidden;
+    padding: 10px;
     margin: 0;
+}
+
+h2 {
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.container {
+    background-color: rgb(10, 10, 193);
+    box-shadow: 4px 2px 4px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    max-width: 100%;
+}
+
+.result-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 12px 10px;
+    height: 50px;
+    width: 100%;
 }
