@@ -7,6 +7,7 @@ body {
     background-color: darksalmon;
     font-family: 'Poppins', sans-serif;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
@@ -21,4 +22,17 @@ div {
     padding: 10px 20px;
     font-size: 20px;
     border-radius: 10px;
+}
+
+input {
+    width: 50px;
+    padding: 5px;
+    font-size: 18px;
+    background-color: darksalmon;
+    border: none;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
 }
