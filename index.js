@@ -24,7 +24,9 @@ generateEl.addEventListener('click', () => {
     resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
 })
 
-function generatePassword()
+function generatePassword(lower, upper, number, symbol, length) {
+    let
+}
 
 function getRandomLower() {
     return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
