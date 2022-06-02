@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: ;
+    background-color: darkcyan;
     font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
@@ -16,6 +16,7 @@ body {
 }
 
 .toggle-container {
+    color: black;
     display: flex;
     align-items: center;
     margin: 10px 0;
@@ -52,6 +53,10 @@ body {
     align-items: center;
     justify-content: center;
     animation: slideOff 0.3s linear forwards;
+}
+
+.toggle:checked+.label .ball {
+    animation: slideOn 0.3s linear forwards;
 }
 
 @keyframes slideOn {
