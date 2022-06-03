@@ -1,22 +1,28 @@
-const toggles = document.querySelectorAll('.toggle')
-const good = document.querySelectorAll('#good')
-const cheap = document.querySelectorAll('#cheap')
-const fast = document.querySelectorAll('#fast')
+const addBtn = document.getElementById("add")
 
-toggles.forEach(toggle => toggle.addEventListener('change', (e => doTheTrick(e.target))))
+addBtn.addNewNote('click', () => addNewNote('Hello World!!'))
 
-function doTheTrick(theClickedOne) {
-    if (good.checked && cheap.checked && fast.check) {
-        if (good === theClickedOne) {
-            fast.checked = false
-        }
+function addNewNote(text = '') {
+    const note = document.createElement('div')
+    note.classList.add('note')
 
-        if (cheap === theClickedOne) {
-            good.checked = false
-        }
+    note.innerHTML = `
+	<div class="tools">
+        <button class="edit"><i class="fas fa-edit"></i></button>
+        <button class="delete"><i class="fas fa-trash-alt"></i></button>
+  </div>
 
-        if (fast === theClickedOne) {
-            cheap.checked = false
-        }
-    }
+  <div class="main ${text ? "" : "hidden"}"></div>
+  <textarea class="${text ? "hidden" : ""}"></textarea>`
+
+    const editBtn = note.querySelector('.edit')
+    const deleteBtn = note.querySelector('.delete')
+    const main = note.querySelector('.main')
+    const textArea = note.querySelector('.txtarea')
+
+    deleteBtn.addEventListener('click', () => {
+        note.remove()
+    })
+
+    document.body.appendChild(note)
 }
