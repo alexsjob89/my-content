@@ -1,6 +1,6 @@
 const addBtn = document.getElementById("add")
 
-addBtn.addNewNote('click', () => addNewNote('Hello World!!'))
+addBtn.addEventListener('click', () => addNewNote())
 
 function addNewNote(text = '') {
     const note = document.createElement('div')
@@ -12,8 +12,8 @@ function addNewNote(text = '') {
         <button class="delete"><i class="fas fa-trash-alt"></i></button>
   </div>
 
-  <div class="main ${text ? "" : "hidden"}"></div>
-  <textarea class="${text ? "hidden" : ""}"></textarea>`
+  <div class='main ${text ? "" : "hidden"}'></div>
+  <textarea class='${text ? "hidden" : ""}'></textarea>`
 
     const editBtn = note.querySelector('.edit')
     const deleteBtn = note.querySelector('.delete')
