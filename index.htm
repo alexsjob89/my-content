@@ -6,50 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/305c75402b.js" crossorigin="anonymous"></script>
-    <title>Password Generator</title>
+    <title>Notes App</title>
 </head>
 
 <body>
-    <div class="container">
-        <h2>Password Generator</h2>
-        <div class="result-container">
-            <span id="result"></span>
-            <button class="btn" id="clipboard">
-             <i class="far fa-clipboard"></i>
-         </button>
+    <div class="counter">
+        <div class="nums">
+            <span class="in">3</span>
+            <span>2</span>
+            <span>1</span>
+            <span>0</span>
         </div>
-        <div class="settings">
-            <div class="setting">
-                <label>Password length</label>
-                <input type="number" id="length" min="4" max="20" value="20">
-            </div>
-            <div class="setting">
-                <label>Include uppercase letters</label>
-                <input type="checkbox" id="uppercase" checked>
-            </div>
-
-            <div class="setting">
-                <label>Include lowercase letters</label>
-                <input type="checkbox" id="lowercase" checked>
-            </div>
-
-            <div class="setting">
-                <label>Include numbers</label>
-                <input type="checkbox" id="numbers" checked>
-            </div>
-
-            <div class="setting">
-                <label>Include symbols</label>
-                <input type="checkbox" id="symbols" checked>
-            </div>
-        </div>
-
-        <button class="btn btn-large" id="generate">
-            Generate Password
-        </button>
+        <h4>Get Ready</h4>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <div class="final">
+        <h1>GO</h1>
+        <button class="replay">Replay</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.16/marked.min.js" integrity="sha512-8d9aScHpB0kf4+i5O3JlEP6VfvvjYYyZXa71ZKq0CzytOfDcH8d4Iej33s/0nNDcqWHhdDuAZKjA2y2qXzvJZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="index.js"></script>
 </body>
 
