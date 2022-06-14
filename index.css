@@ -84,7 +84,7 @@ nav {
 }
 
 .sliderBg {
-    background-image: url('images/kisspng-circle-coreldraw-round-frame-5a7a889d3367f3.9356115815179798052106.png');
+    /* background-image: url('images/kisspng-circle-coreldraw-round-frame-5a7a889d3367f3.9356115815179798052106.png');
     width: 40px;
     height: 40px;
     padding-left: 800px;
@@ -92,7 +92,7 @@ nav {
     padding-bottom: 900px;
     background-repeat: no-repeat;
     position: absolute;
-    z-index: 1;
+    z-index: 1; */
 }
 
 .sliderimg {}
@@ -177,4 +177,17 @@ nav {
 
 .product {
     height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 9%, 100% 0, 100% 89%, 0 100%);
+}
+
+.productDetails {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+    background-color: white;
+    clip-path: polygon(0 9%, 100% 0, 100% 89%, 0 100%);
 }
