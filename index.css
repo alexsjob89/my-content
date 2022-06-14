@@ -1,67 +1,180 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
-* {
-    box-sizing: border-box;
-}
-
 body {
-    background-color: rgb(229, 240, 192);
     font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-wrap: wrap;
     margin: 0;
-    padding-top: 3rem;
+    padding: 0;
 }
 
-.add {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    background-color: lightblue;
-    color: black;
-    border: none;
-    border-radius: 3px;
-    padding: 0.5rem 1rem;
+nav {
+    background-color: #111;
+    color: white;
+    padding: 20px 50px;
 }
 
-.note {
-    background-color: #fff;
-    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
-    margin: 30px 20px;
-    height: 400px;
-    width: 400px;
+.navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: rgb(251, 251, 251);
+    padding: 10px 20px;
     border-radius: 10px;
 }
 
-.note .tools {
-    background-color: #9ec826;
-    display: flex;
-    justify-content: flex-end;
-    padding: 0.5rem;
-}
-
-.note .tools button {
+.searchInput {
+    border: none;
     background-color: transparent;
-    border: none;
-    color: #fff;
+}
+
+.searchInput::placeholder {
+    color: rgb(251, 251, 251);
+}
+
+.limitedoffer {
+    font-size: 30px;
+    padding-left: 5px;
+    border-bottom: solid;
+    border-left: solid;
+    border-radius: 10px;
+}
+
+.navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem:hover {
+    color: red;
+}
+
+.menuItem {
+    margin-right: 50px;
     cursor: pointer;
-    font-size: 1rem;
-    margin-left: 0.5rem;
+    color: lightgrey;
+    font-weight: 400;
 }
 
-.note textarea {
-    outline: none;
-    font-family: inherit;
-    font-size: 1.2rem;
+.slider {
+    background-image: url("images/030fdc0cdde1a6107cc5dbbce88950f6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+    overflow: hidden;
+}
+
+.sliderwrapper {
+    display: flex;
+    width: 500vw;
+    height: 60vw;
+    transition: all 1s ease-in-out;
+}
+
+.sliderItem {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.sliderBg {
+    background-image: url('images/kisspng-circle-coreldraw-round-frame-5a7a889d3367f3.9356115815179798052106.png');
+    width: 40px;
+    height: 40px;
+    padding-left: 800px;
+    padding-right: 900;
+    padding-bottom: 900px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+}
+
+.sliderimg {}
+
+.sliderPrice {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-size: 60px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid white;
+    z-index: 1;
+}
+
+.sliderTitle {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    z-index: 1;
+}
+
+.buyButton {
+    position: absolute;
+    bottom: 40%;
+    right: 10%;
+    font-size: 40px;
+    color: white;
     border: none;
-    height: 400px;
-    width: 100%;
-    padding: 20px;
+    font-weight: 300;
+    text-align: center;
+    /* border: 1px solid grey; */
+    background-color: rgb(76, 3, 3);
+    z-index: 1;
+    cursor: pointer;
+    clip-path: polygon(0 8%, 100% 0, 100% 93%, 1% 100%);
+    border-radius: 10%;
 }
 
-.main {
-    padding: 20px;
+.buyButton:hover {
+    background-color: rgb(229, 0, 0);
+    color: rgb(255, 251, 251);
+    padding: 10px 15px;
+    border-radius: 20%;
 }
 
-.hidden {
-    display: none;
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.featureIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.featureTitle {
+    font-size: 20px;
+    font-weight: 1000;
+    margin: 20px;
+}
+
+.featureDesc {
+    color: grey;
+    width: 50%;
+    height: 100%;
+}
+
+.product {
+    height: 100vh;
 }

@@ -5,5 +5,6 @@
   "debug.console.wordWrap": true,
   "diffEditor.wordWrap": "on",
   "editor.wordWrapColumn": 60,
-  "editor.accessibilitySupport": "auto"
+  "editor.accessibilitySupport": "auto",
+  "editor.accessibilityPageSize": 30
 }
