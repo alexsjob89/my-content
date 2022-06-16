@@ -6,5 +6,6 @@
   "diffEditor.wordWrap": "on",
   "editor.wordWrapColumn": 60,
   "editor.accessibilitySupport": "auto",
-  "editor.accessibilityPageSize": 30
+  "editor.accessibilityPageSize": 30,
+  "workbench.editor.splitInGroupLayout": "vertical"
 }
