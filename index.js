@@ -1,5 +1,5 @@
-const wrapper = document.querySelector(".sliderwrapper")
-const menuItems = document.querySelectorAll(".menuItem")
+const wrapper = document.querySelector(".sliderwrapper");
+const menuItems = document.querySelectorAll(".menuItem");
 
 const products = [{
         id: 1,
@@ -7,11 +7,11 @@ const products = [{
         price: 119,
         colors: [{
                 code: "black",
-                img: "./img/air.png",
+                img: "./img.shoes/air.png",
             },
             {
                 code: "darkblue",
-                img: "./img/air2.png",
+                img: "./img.shoes/air2.png",
             },
         ],
     },
@@ -21,11 +21,11 @@ const products = [{
         price: 149,
         colors: [{
                 code: "lightgray",
-                img: "./img/jordan.png",
+                img: "./img.shoes/jordan.png",
             },
             {
                 code: "green",
-                img: "./img/jordan2.png",
+                img: "./img.shoes/jordan2.png",
             },
         ],
     },
@@ -35,11 +35,11 @@ const products = [{
         price: 109,
         colors: [{
                 code: "lightgray",
-                img: "./img/blazer.png",
+                img: "./img.shoes/blazer.png",
             },
             {
                 code: "green",
-                img: "./img/blazer2.png",
+                img: "./img.shoes/blazer2.png",
             },
         ],
     },
@@ -49,11 +49,11 @@ const products = [{
         price: 129,
         colors: [{
                 code: "black",
-                img: "./img/crater.png",
+                img: "./img.shoes/crater.png",
             },
             {
                 code: "lightgray",
-                img: "./img/crater2.png",
+                img: "./img.shoes/crater2.png",
             },
         ],
     },
@@ -63,34 +63,69 @@ const products = [{
         price: 99,
         colors: [{
                 code: "gray",
-                img: "./img/hippie.png",
+                img: "./img.shoes/hippie.png",
             },
             {
                 code: "black",
-                img: "./img/hippie2.png",
+                img: "./img.shoes/hippie2.png",
             },
         ],
     },
 ];
 
+let choosenProduct = products[0];
 
-let choosenProduct = products[0]
-
-const currentProductImg = document.querySelector(".productImg")
-const currentProductTitle = document.querySelector(".productTitle")
-const currentProductPrice = document.querySelector(".productPrice")
-const currentProductColors = document.querySelectorAll(".color")
-const currentProductSizes = document.querySelectorAll(".size")
-
+const currentProductImg = document.querySelector(".productImg");
+const currentProductTitle = document.querySelector(".productTitle");
+const currentProductPrice = document.querySelector(".productPrice");
+const currentProductColors = document.querySelectorAll(".color");
+const currentProductSizes = document.querySelectorAll(".size");
 
 menuItems.forEach((item, index) => {
     item.addEventListener("click", () => {
+        //change the current slide
         wrapper.style.transform = `translateX(${-100 * index}vw)`;
 
-        choosenProduct = product[index]
+        //change the choosen product
+        choosenProduct = products[index];
 
+        //change texts of currentProduct
         currentProductTitle.textContent = choosenProduct.title;
-        choosenProductPrice.textContent = "$" + choosenProduct.price;
-        currentProductImg.src = choosenProduct.color[0]
+        currentProductPrice.textContent = "$" + choosenProduct.price;
+        currentProductImg.src = choosenProduct.colors[0].img;
+
+        //assing new colors
+        currentProductColors.forEach((color, index) => {
+            color.style.backgroundColor = choosenProduct.colors[index].code;
+        });
     });
+});
+
+currentProductColors.forEach((color, index) => {
+    color.addEventListener("click", () => {
+        currentProductImg.src = choosenProduct.colors[index].img;
+    });
+});
+
+currentProductSizes.forEach((size, index) => {
+    size.addEventListener("click", () => {
+        currentProductSizes.forEach((size) => {
+            size.style.backgroundColor = "white";
+            size.style.color = "black";
+        });
+        size.style.backgroundColor = "black";
+        size.style.color = "white";
+    });
+});
+
+const productButton = document.querySelector(".productButton");
+const payment = document.querySelector(".payment");
+const close = document.querySelector(".close");
+
+productButton.addEventListener("click", () => {
+    payment.style.display = "flex";
+});
+
+close.addEventListener("click", () => {
+    payment.style.display = "none";
 });
