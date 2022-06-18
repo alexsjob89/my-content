@@ -1,11 +1,12 @@
 {
   "editor.wordWrap": "bounded",
-  "editor.renderWhitespace": "boundary",
+  "editor.renderWhitespace": "none",
   "editor.insertSpaces": false,
   "debug.console.wordWrap": true,
   "diffEditor.wordWrap": "on",
   "editor.wordWrapColumn": 60,
   "editor.accessibilitySupport": "auto",
   "editor.accessibilityPageSize": 30,
-  "workbench.editor.splitInGroupLayout": "vertical"
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "editor.tabSize": 1
 }
