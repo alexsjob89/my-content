@@ -1,6 +1,6 @@
 {
   "editor.wordWrap": "bounded",
-  "editor.renderWhitespace": "none",
+  "editor.renderWhitespace": "selection",
   "editor.insertSpaces": false,
   "debug.console.wordWrap": true,
   "diffEditor.wordWrap": "on",
@@ -8,5 +8,8 @@
   "editor.accessibilitySupport": "auto",
   "editor.accessibilityPageSize": 30,
   "workbench.editor.splitInGroupLayout": "vertical",
-  "editor.tabSize": 1
+  "editor.tabSize": 10,
+  "editor.glyphMargin": false,
+  "editor.lineNumbers": "off",
+  "editor.scrollbar.horizontalScrollbarSize": 2
 }
