@@ -13,182 +13,82 @@
 
 <body>
 
-    <section class="header">
-
-        <a href="home.html" class="logo">travel.</a>
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"> <i class="fas fa-paper-plane"></i>travel </a>
 
         <nav class="navbar">
-            <a href="home.html">home</a>
-            <a href="about.html">about</a>
-            <a href="package.html">package</a>
-            <a href="book.html">book</a>
+            <a data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a>
+            <a data-aos="zoom-in-left" data-aos-delay="450" href="#about">about</a>
+            <a data-aos="zoom-in-left" data-aos-delay="600" href="#destination">destination</a>
+            <a data-aos="zoom-in-left" data-aos-delay="750" href="#services">services</a>
+            <a data-aos="zoom-in-left" data-aos-delay="900" href="#gallery">gallery</a>
+            <a data-aos="zoom-in-left" data-aos-delay="1150" href="#blogs">blogs</a>
+
+            <a data-aos="zoom-in-left" data-aos-delay="1300" href="#book-form" class="btn">book now</a>
         </nav>
+    </header>
 
-        <div id="menu-btn" class="fas fa-bars"></div>
-
-    </section>
-
-    <section class="home">
-        <div class="swiper home-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide slide" style="background: url(coverage/home-slide-1.jpg) no-repeat">
-                    <div class="content">
-                        <span>explore, discover, travel</span>
-                        <h3>travel around the world</h3>
-                        <a href="package.html" class="btn">discover more</a>
-                    </div>
-                </div>
-                <div class="swiper-slide slide" style="background: url(coverage/home-slide-2.jpg) no-repeat">
-                    <div class="content">
-                        <span>explore, discover, travel</span>
-                        <h3>discover the new places</h3>
-                        <a href="package.html" class="btn">discover more</a>
-                    </div>
-                </div>
-
-                <div class="swiper-slide slide" style="background: url(coverage/home-slide-3.jpg) no-repeat">
-                    <div class="content">
-                        <span>explore, discover, travel</span>
-                        <h3>make your travel worthwhile</h3>
-                        <a href="package.html" class="btn">discover more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </section>
-
-    <section class="services">
-        <h1 class="heading-title">our services</h1>
-        <div class="box-container">
-            <div class="box">
-                <img src="coverage/icon-1.png" alt="">
-                <h3>adventure</h3>
-            </div>
-
-            <div class="box">
-                <img src="coverage/icon-2.png" alt="">
-                <h3>tour guide</h3>
-            </div>
-
-            <div class="box">
-                <img src="coverage/icon-3.png" alt="">
-                <h3>trekking</h3>
-            </div>
-
-            <div class="box">
-                <img src="coverage/icon-4.png" alt="">
-                <h3>camp fire</h3>
-            </div>
-
-            <div class="box">
-                <img src="coverage/icon-6.png" alt="">
-                <h3>off road</h3>
-            </div>
-
-            <div class="box">
-                <img src="coverage/icon-6.png" alt="">
-                <h3>camping</h3>
-            </div>
-        </div>
-    </section>
-
-    <section class="home-about">
-        <div class="image">
-            <img src="coverage/about-img.jpg" alt="">
-        </div>
-
+    <section class="home" id="home">
         <div class="content">
-            <h3>about us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita et, recusandae nobis fugit modi quibusdam ea assumenda, nulla quisquam repellat rem aliquid sequi maxime sapiente autem ipsum? Nobis, provident voluptate?</p>
-            <a href="about.html" class="btn">read more</a>
+            <span data-aos="fade-up" data-aos-delay="150">follow us</span>
+            <h3 data-aos="fade-up" data-aos-delay="300">to the unknown</h3>
+            <p data-aos="fade-up" data-aos-delay="450">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quia illum quod perspiciatis harum in possimus? Totam consequuntur officia quia?</p>
+            <a data-aos="fade-up" data-aos-delay="600" href="#" class="btn">book now</a>
         </div>
     </section>
 
-    <section class="home-packages">
-        <h1 class="heading-title">our packages</h1>
+    <section class="book-form" id="book-form">
+
+        <form action="">
+            <div data-aos="zoom-in" data-aos-delay="150" class="inputBox">
+                <span>were to?</span>
+                <input type="text" placeholder="place name" value="">
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="300" class="inputBox">
+                <span>when?</span>
+                <input type="data" value="">
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="450" class="inputBox">
+                <span>how many?</span>
+                <input type="number" placeholder="number of travelers" value="">
+            </div>
+            <input data-aos="zoom-in" data-aos-delay="600" type="submit" value="find now" class="btn">
+        </form>
+    </section>
+
+    <section class="about" id="about">
+
+        <div class="video-container" data-aos="fade-right" data-aos-delay="300">
+            <video src="travelimg/about-vid-1.mp4" muted autoplay loop class="video"></video>
+            <div class="controls">
+                <span class="control-btn" data-src="travelimg/about-vid-1.mp4"></span>
+                <span class="control-btn" data-src="travelimg/about-vid-2.mp4"></span>
+                <span class="control-btn" data-src="travelimg/about-vid-3.mp4"></span>
+            </div>
+        </div>
+        <div class="content" data-aos="fade-left" data-aos-delay="600">
+            <span>why choos us?</span>
+            <h3>Nature's Majesty Awaits you</h3>
+            <p>Nature's Majesty Awaits You</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde fugit repellat error deserunt nam aperiam odit libero quos provident. Nostrum?</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+    </section>
+
+    <section class="destination" id="destination">
+
+        <div class="heading">
+            <span>our destination</span>
+            <h1>make yours destination</h1>
+        </div>
 
         <div class="box-container">
 
-            <div class="box">
-                <div class="image">
-                    <img src="coverage/img-1.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
-                    <a href="book.html" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="coverage/img-2.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
-                    <a href="book.html" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="coverage/img-3.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>adventure & tour</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
-                    <a href="book.html" class="btn">book now</a>
-                </div>
-            </div>
-        </div>
-        <div class="load-more"> <a href="package.html" class="btn">load more</a> </div>
-    </section>
-
-    <section class="home-offer">
-        <div class="content">
-            <h3>upto 50% off</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure tempora assumenda, debitis aliquid nesciunt maiores quas! Magni cumque quaerat saepe!</p>
-            <a href="book.html" class="btn">book now</a>
+            <div class="box" data-aos=""></div>
         </div>
     </section>
 
-    <section class="footer">
-        <div class="box-container">
-            <div class="box">
-                <h3>quick links</h3>
-                <a href="home.html"><i class="fas fa-angle-right"></i>home</a>
-                <a href="about.html"><i class="fas fa-angle-right"></i>about</a>
-                <a href="package.html"><i class="fas fa-angle-right"></i>package</a>
-                <a href="book.html"><i class="fas fa-angle-right"></i>book</a>
-            </div>
-            <div class="box">
-                <h3>extra links</h3>
-                <a href="#"><i class="fas fa-angle-right"></i>ask question</a>
-                <a href="#"><i class="fas fa-angle-right"></i>about us</a>
-                <a href="#"><i class="fas fa-angle-right"></i>privacy policy</a>
-                <a href="#"><i class="fas fa-angle-right"></i>terms of use</a>
-            </div>
-            <div class="box">
-                <h3>contact info</h3>
-                <a href="#"><i class="fas fa-phone"></i>07565883908</a>
-                <a href="#"><i class="fas fa-phone"></i>07565883908</a>
-                <a href="#"><i class="fas fa-envelope"></i>alexandru.dorultan@live.com</a>
-                <a href="#"><i class="fas fa-map"></i>UK, London, -east road</a>#
-            </div>
-            <div class="box">
-                <h3>follow us</h3>
-                <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
-                <a href="#"><i class="fab fa-twitter"></i>twitter</a>
-                <a href="#"><i class="fab fa-instagram"></i>instagram</a>
-                <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
-            </div>
-        </div>
-
-        <div class="credit">created by <span>mr. web designer</span> | all right reserved! </div>
-    </section>
 
     <script src="index.js"></script>
 </body>
