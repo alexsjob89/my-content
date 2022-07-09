@@ -1,52 +1,26 @@
-let menu = document.querySelector('#menu-btn')
-let navbar = document.querySelector('.header .navbar');
+let searchForm = document.querySelector('.search-form');
 
-menu.onclick = () => {
-    menu.classList.toggle('fa-times');
-    navbar.classList.toggle('active');
-};
-
-window.onscroll = () => {
-    menu.classList.remove('fa-times');
+document.querySelector('#search-btn').onclick = () => {
+    searchForm.classList.toggle('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
     navbar.classList.remove('active');
-};
+}
 
-var swiper = new Swiper(".home-slider", {
-    loop: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        nextEl: ".swiper-button.prev",
-    },
-});
+let shoppingCart = document.querySelector('.shopping-cart');
 
-var swiper = new swiper(".reviews-slider", {
-    grabCursor: true,
-    loop: true,
-    autoHeight: true,
-    spaceBetween: 20,
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        700: {
-            slidesPerView: 2,
-        },
-        1000: {
-            slidesPerView: 3,
-        },
-    },
-});
+document.querySelector('#cart-btn').onclick = () => {
+    shoppingCart.classList.toggle('active');
+    searchForm.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
 
-let loadMoreBtn = document.querySelector('.packages .load-more .btn');
-let currentItem = 3;
+let loginForm = document.querySelector('.login-form');
 
-loadMoreBtn.onclick = () => {
-    let boxes = [...document.querySelectorAll('.packages .box-container .box')];
-    for (var i = currentItem; i < currentItem + 3; i++) {
-        boxes[i].getElementsByClassName.display = 'inline-block';
-    };
-    currentItem += 3;
-    if (currentItem >= boxes.length) {
-        loadMoreBtn.getElementsByClassName.display = 'none';
-    }
+document.querySelector('#login-btn').onclick = () => {
+    loginForm.classList.toggle('active');
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    navbar.classList.remove('active');
 }

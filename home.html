@@ -14,78 +14,79 @@
 <body>
 
     <header class="header">
-        <div id="menu-btn" class="fas fa-bars"></div>
-        <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"> <i class="fas fa-paper-plane"></i>travel </a>
+
+        <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i>groco</a>
 
         <nav class="navbar">
-            <a data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a>
-            <a data-aos="zoom-in-left" data-aos-delay="450" href="#about">about</a>
-            <a data-aos="zoom-in-left" data-aos-delay="600" href="#destination">destination</a>
-            <a data-aos="zoom-in-left" data-aos-delay="750" href="#services">services</a>
-            <a data-aos="zoom-in-left" data-aos-delay="900" href="#gallery">gallery</a>
-            <a data-aos="zoom-in-left" data-aos-delay="1150" href="#blogs">blogs</a>
-
-            <a data-aos="zoom-in-left" data-aos-delay="1300" href="#book-form" class="btn">book now</a>
+            <a href="#home">home</a>
+            <a href="#features">features</a>
+            <a href="#products">products</a>
+            <a href="#categories">categories</a>
+            <a href="#review">review</a>
+            <a href="#blogs">blogs</a>
         </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="foodimg/cart-img-1.png" alt="">
+                <div class="content">
+                    <h3>watermelon</h3>
+                    <span class="price">£4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="foodimg/cart-img-2.png" alt="">
+                <div class="content">
+                    <h3>watermelon</h3>
+                    <span class="price">£4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="foodimg/cart-img-3.png" alt="">
+                <div class="content">
+                    <h3>watermelon</h3>
+                    <span class="price">£4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="total"> total : £19.69/-</div>
+            <a href="#" class="btn">checkout</a>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't heve an account <a href="#">create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
     </header>
 
     <section class="home" id="home">
+
         <div class="content">
-            <span data-aos="fade-up" data-aos-delay="150">follow us</span>
-            <h3 data-aos="fade-up" data-aos-delay="300">to the unknown</h3>
-            <p data-aos="fade-up" data-aos-delay="450">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quia illum quod perspiciatis harum in possimus? Totam consequuntur officia quia?</p>
-            <a data-aos="fade-up" data-aos-delay="600" href="#" class="btn">book now</a>
-        </div>
-    </section>
-
-    <section class="book-form" id="book-form">
-
-        <form action="">
-            <div data-aos="zoom-in" data-aos-delay="150" class="inputBox">
-                <span>were to?</span>
-                <input type="text" placeholder="place name" value="">
-            </div>
-            <div data-aos="zoom-in" data-aos-delay="300" class="inputBox">
-                <span>when?</span>
-                <input type="data" value="">
-            </div>
-            <div data-aos="zoom-in" data-aos-delay="450" class="inputBox">
-                <span>how many?</span>
-                <input type="number" placeholder="number of travelers" value="">
-            </div>
-            <input data-aos="zoom-in" data-aos-delay="600" type="submit" value="find now" class="btn">
-        </form>
-    </section>
-
-    <section class="about" id="about">
-
-        <div class="video-container" data-aos="fade-right" data-aos-delay="300">
-            <video src="travelimg/about-vid-1.mp4" muted autoplay loop class="video"></video>
-            <div class="controls">
-                <span class="control-btn" data-src="travelimg/about-vid-1.mp4"></span>
-                <span class="control-btn" data-src="travelimg/about-vid-2.mp4"></span>
-                <span class="control-btn" data-src="travelimg/about-vid-3.mp4"></span>
-            </div>
-        </div>
-        <div class="content" data-aos="fade-left" data-aos-delay="600">
-            <span>why choos us?</span>
-            <h3>Nature's Majesty Awaits you</h3>
-            <p>Nature's Majesty Awaits You</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde fugit repellat error deserunt nam aperiam odit libero quos provident. Nostrum?</p>
-            <a href="#" class="btn">read more</a>
-        </div>
-    </section>
-
-    <section class="destination" id="destination">
-
-        <div class="heading">
-            <span>our destination</span>
-            <h1>make yours destination</h1>
-        </div>
-
-        <div class="box-container">
-
-            <div class="box" data-aos=""></div>
+            <h3>fresh and <span>organic</span>products for you</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam libero nostrum veniam facere tempore nisi.</p>
+            <a href="#" class="btn">shop now</a>
         </div>
     </section>
 
