@@ -5,18 +5,18 @@
 }
 
 html {
+    background-color: lightblue;
     padding: 0;
     border: 0;
     margin: none;
     outline: none;
     overflow: hidden;
     scrollbar-width: 40px;
-    scroll-behavior: smooth;
-    scroll-padding-top: 2rem;
 }
 
 html::-webkit-scrollbar {
     width: 20rem;
+    height: 100%;
 }
 
 html::-webkit-scrollbar-track {
@@ -29,6 +29,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .navBar {
+    opacity: 0.7;
     background-color: rgb(48, 113, 244);
     box-shadow: -4px 4px 11px 6px rgba(16, 163, 255, 0.23);
     width: 100%;
@@ -47,6 +48,64 @@ html::-webkit-scrollbar-thumb {
     width: 95px;
     height: 34px;
     text-align: center;
-    border: 1px solid black;
+    border: none;
     border-radius: 10px;
+    box-shadow: 0px -1px 9px 10px rgba(7, 73, 114, 0.5);
+}
+
+.navBar .nav-content a:hover {
+    background-color: rgb(25, 6, 233);
+    opacity: 0.6;
+    color: white;
+}
+
+.icons {
+    align-items: center;
+    justify-items: center;
+    margin-left: 400px;
+    margin-top: -40px;
+}
+
+.icons a {
+    font-size: 35px;
+    margin-left: 10px;
+    color: red;
+}
+
+.icons a:hover {
+    color: white;
+    padding: 2px;
+}
+
+.logo-box {
+    padding-top: 4px;
+    padding-left: 10px;
+    width: 40px;
+}
+
+.logo-box span {
+    font-size: 40px;
+    color: white;
+}
+
+.logo-box #elisa {
+    color: red;
+    font-weight: 700;
+    border: 1px solid black;
+}
+
+.home {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    height: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.home .content {
+    background-image: url(flower/home-bg.jpg);
+    box-shadow: 1px 3px 9px 7px rgba(7, 73, 114, 0.48);
+    height: 100%;
+    padding-top: 10p;
 }
