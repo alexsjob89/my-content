@@ -4,7 +4,7 @@
     text-decoration: none;
 }
 
-html {
+body {
     background-color: lightblue;
     padding: 0;
     border: 0;
@@ -14,16 +14,16 @@ html {
     scrollbar-width: 40px;
 }
 
-html::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 20rem;
-    height: 100%;
+    height
 }
 
-html::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     background-color: rgb(235, 0, 0);
 }
 
-html::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background-color: rgb(255, 255, 255);
     border: 5px;
 }
