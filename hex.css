@@ -3,109 +3,60 @@
     margin: 0;
     text-decoration: none;
     outline: none;
-    overflow-x: hidden;
+    overflow-wrap: normal;
 }
 
 html {
-    margin: none;
     scrollbar-width: 50px;
     list-style: none;
-    width: 100%;
-    height: 100vh;
-    background-color: grey;
+    background-color: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
 }
 
 html::-webkit-scrollbar {
-    background-color: red;
+    background-color: grey;
 }
 
 html::-webkit-scrollbar-button {
     border: 4px;
 }
 
-.dropdown {
-    min-width: 15em;
-    position: relative;
-    margin: 2em;
+.navbar-content {
+    padding-top: 10rem;
 }
 
-.deopdown * {
-    box-sizing: border-box;
-}
-
-.select {
-    background: green;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px green;
-    border-radius: 0.5em;
-    padding: 1em;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.select-clicked {
-    border: 2px green solid;
-    box-shadow: 0 0 0.8em green;
-}
-
-.select:hover {
-    background: #323741;
-}
-
-.caret {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 6px solid #fff;
-    transition: 0.3s;
-}
-
-.caret-rotate {
-    transform: rotate(180deg);
-}
-
-.menu {
-    list-style: none;
-    padding: 0.2rem 0.5rem;
-    background: #323741;
-    border: 1px #363a43 solid;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    color: #9fa5b5;
-    position: absolute;
-    top: 3em;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%);
-    opacity: 0;
+.dropdown-content {
     display: none;
-    transition: 0.2s;
-    z-index: 1;
 }
 
-.menu li {
-    padding: 0.7em 0.5em;
-    margin: 0.3em 0;
-    border-radius: 0.5em;
-    cursor: pointer;
+.navbar {
+    border: 1px solid black;
+    height: 1000%;
+    width: 300px;
+    margin: none;
+    outline: none;
 }
 
-.menu li:hover {
-    background-color: #2a2b35;
-}
-
-.active {
-    background: #2a242a;
-}
-
-.menu-open {
+.dropbtn {
+    background: none;
+    padding-left: 20px;
+    font-weight: 600;
     display: block;
-    opacity: 1;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+}
+
+.dropbtn:hover {
+    background-color: lightgray;
+    margin-left: 20px;
+    width: cover;
+}
+
+.contactbox {
+    padding-top: 10rem;
+}
+
+.contactbox .li {
+    display: block;
 }
