@@ -3,7 +3,7 @@
     margin: 0;
     text-decoration: none;
     outline: none;
-    overflow-wrap: normal;
+    overflow-x: none;
 }
 
 html {
@@ -27,30 +27,94 @@ html::-webkit-scrollbar-button {
 
 .dropdown-content {
     display: none;
+    height: 120px;
+    width: 100px;
+    justify-content: center;
+    padding-left: 20px;
+    margin-left: 120px;
+    align-items: center;
+    position: relative;
+}
+
+.dropdown-content a {
+    display: block;
+    font-size: 25px;
+    padding-left: 10px;
+    color: black;
 }
 
 .navbar {
-    border: 1px solid black;
+    background-color: antiquewhite;
+    position: fixed;
+    border: none;
     height: 1000%;
     width: 300px;
     margin: none;
     outline: none;
 }
 
-.dropbtn {
+.btn,
+.btn2,
+.btn3,
+.btn4,
+.btn5,
+.btn6,
+.btn7 {
     background: none;
-    padding-left: 20px;
-    font-weight: 600;
+    background-size: cover;
+    width: 100%;
+    height: 50px;
+    padding-left: -10px;
+    font-weight: 200;
     display: block;
     font-size: 1.5rem;
     border: none;
     outline: none;
 }
 
-.dropbtn:hover {
+.btn:hover {
+    background-color: rgb(189, 189, 189);
+    color: solid black;
+    margin-left: 5px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown2:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown3:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown4:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown5:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown6:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown7:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
     background-color: lightgray;
-    margin-left: 20px;
-    width: cover;
+    transition: 0.5s;
+}
+
+.dropdown-content:hover {
+    padding-left: -200px;
 }
 
 .contactbox {
