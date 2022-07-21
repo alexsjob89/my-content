@@ -11,6 +11,7 @@ html {
     list-style: none;
     background-color: none;
     display: flex;
+    outline: hidden;
 }
 
 html::-webkit-scrollbar {
@@ -26,7 +27,7 @@ html::-webkit-scrollbar-button {
 }
 
 .navbar {
-    /* background-color: antiquewhite; */
+    background-color: antiquewhite;
     position: fixed;
     width: 200px;
     height: 1000px;
@@ -334,4 +335,63 @@ html::-webkit-scrollbar-button {
 .contactbox li {
     margin-top: 10px;
     cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    overflow-x: none;
+    margin: 0;
+}
+
+.icons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 95rem;
+    border: 1px solid black;
+    width: 2rem;
+    height: 2rem;
+}
+
+i {
+    position: absolute;
+    justify-content: space-between;
+    top: 2rem;
+    left: 1rem;
+    margin-left: 1rem;
+    border: 1px solid black;
+}
+
+.mainimg {
+    outline: none;
+    overflow: hidden;
+    position: absolute;
+    border: 1px solid black;
+    left: 330px;
+    top: 80px;
+}
+
+.main {
+    width: 90rem;
+}
+
+.img-box {
+    position: absolute;
+    display: flex;
+    outline: hidden;
+    top: 60rem;
+    left: 15rem;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+.img4,
+.img5,
+.img6,
+.img7,
+.img8,
+.img9 {
+    margin: 1rem;
 }
