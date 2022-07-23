@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 * {
-    margin: 0;
+    margin: none;
     text-decoration: none;
     outline: none;
-    overflow-x: none;
+    /* overflow-x: none; */
 }
 
 html {
-    scrollbar-width: 50px;
+    background-color: rgb(247, 228, 203);
+    overflow-x: hidden;
     list-style: none;
     background-color: none;
     display: flex;
     outline: hidden;
 }
 
-html::-webkit-scrollbar {
+
+/* html::-webkit-scrollbar {
     background-color: grey;
 }
 
@@ -24,10 +26,10 @@ html::-webkit-scrollbar-button {
 
 .navbar-content {
     padding-top: 10rem;
-}
+} */
 
 .navbar {
-    background-color: antiquewhite;
+    overflow: hidden;
     position: fixed;
     width: 200px;
     height: 1000px;
@@ -337,20 +339,13 @@ html::-webkit-scrollbar-button {
     cursor: pointer;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    overflow-x: none;
-    margin: 0;
-}
+.content {}
 
 .icons {
     position: absolute;
     display: flex;
     flex-direction: column;
     left: 95rem;
-    border: 1px solid black;
     width: 2rem;
     height: 2rem;
 }
@@ -361,37 +356,64 @@ i {
     top: 2rem;
     left: 1rem;
     margin-left: 1rem;
-    border: 1px solid black;
 }
 
 .mainimg {
     outline: none;
-    overflow: hidden;
+    overflow-x: none;
     position: absolute;
-    border: 1px solid black;
+    width: auto;
+    margin-left: -105px;
+    margin-right: -36px;
     left: 330px;
     top: 80px;
+    right: -1px;
 }
 
 .main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 90rem;
+    overflow: hidden;
+    top: 0;
+    margin-left: -2px;
+    right: -1px;
 }
 
 .img-box {
-    position: absolute;
-    display: flex;
-    outline: hidden;
-    top: 60rem;
-    left: 15rem;
-    flex-direction: row;
-    border: 1px solid black;
+    position: relative;
+    outline: none;
+    padding-left: 10px;
 }
 
-.img4,
-.img5,
-.img6,
-.img7,
-.img8,
-.img9 {
-    margin: 1rem;
+.img {
+    position: relative;
+    display: table;
+    padding-left: 1px;
+    top: 70rem;
+    float: right;
+    left: 12.5rem;
+    margin: 20px;
+}
+
+.img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.buy-now {
+    position: absolute;
+    font-size: 1rem;
+    background-color: white;
+    opacity: 1.3;
+    border: 1px solid rgb(255, 255, 255);
+    color: solid black;
+    font-weight: 600;
+}
+
+.buy-now:hover {
+    background-color: black;
+    color: white;
+    border-radius: 6px;
 }
