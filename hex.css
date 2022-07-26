@@ -29,7 +29,6 @@ html::-webkit-scrollbar-button {
 } */
 
 .navbar {
-    border: 1px solid black;
     overflow: hidden;
     position: fixed;
     width: 200px;
@@ -646,8 +645,84 @@ h1 {
 .aboutA {
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
     width: 20rem;
-    margin-top: 100rem;
-    margin-left: 50rem;
+    margin-top: 93.5rem;
+    margin-left: 45rem;
+    padding-top: 120px;
+    cursor: pointer;
+}
+
+.aboutA li {
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+.about {
+    padding-left: 70px;
+    font-size: 2rem;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.store {
+    position: absolute;
+    display: table;
+    justify-content: baseline;
+    width: 15rem;
+    height: 20rem;
+    margin-top: -20rem;
+    margin-left: 75rem;
+}
+
+.storeHead,
+.we-accept,
+i {
+    display: table;
+}
+
+p {
+    margin-top: 10px;
+}
+
+.storeHead {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.we-accept {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.icons-content {
+    margin-top: 30px;
+}
+
+.poweredby {
+    background-color: black;
+    color: white;
+    width: 80rem;
+    height: 5rem;
+    margin-top: 6rem;
+    margin-left: 13.5rem;
+}
+
+.power {
+    font-size: 1.1rem;
+    font-weight: 30;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 35rem;
+    padding-top: 1.5rem;
+    opacity: 0.8;
+}
+
+span {
+    text-decoration: underline;
 }
