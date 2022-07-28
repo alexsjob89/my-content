@@ -57,3 +57,60 @@ a:hover {
     margin-top: 7rem;
     font-size: 1.5rem;
 }
+
+.slider {
+    max-width: 1000px;
+    position: absolute;
+    margin: auto;
+    margin-top: 45rem;
+    left: 45rem;
+}
+
+.mySlide {
+    display: none;
+}
+
+.slideButtons {
+    position: relative;
+}
+
+.left,
+.right {
+    position: absolute;
+    background: none;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid black;
+    color: grey;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.left {
+    margin-left: -20rem;
+}
+
+.right {
+    margin-right: 20rem;
+}
+
+.dot-container {
+    display: flex;
+    position: absolute;
+    left: 110rem;
+    top: 100rem;
+    gap: 5px;
+}
+
+.dot {
+    display: block;
+    background-color: grey;
+    border: 1px solid white;
+    width: 13px;
+    height: 13px;
+}
+
+.slideButtons .dot-container {
+    background-color: grey;
+}

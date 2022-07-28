@@ -30,25 +30,27 @@
 
         <div class="mySlide">
             <img src="market/sound.jpg" style="width: 600px;">
-            <button class="img1"></button>
         </div>
 
         <div class="mySlide">
             <img src="market/workbench.jpg" style="width: 600px;">
-            <button class="img2"></button>
         </div>
 
         <div class="mySlide">
             <img src="market/coffee.jpg" style="width: 600px;">
-            <button class="img3"></button>
         </div>
 
         <div class="slideButtons">
-            <button class="left"></button>
-            <button class="right"></button>
+            <button class="left" onclick="plusSlides(-1)"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="right" onclick="plusSlides(1)"><i class="fa-solid fa-arrow-right"></i></button>
         </div>
     </section>
 
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 
 
 
