@@ -1,15 +1,8 @@
 {
-  "editor.wordWrap": "bounded",
-  "editor.renderWhitespace": "selection",
-  "editor.insertSpaces": false,
-  "debug.console.wordWrap": true,
-  "diffEditor.wordWrap": "on",
-  "editor.wordWrapColumn": 60,
-  "editor.accessibilitySupport": "auto",
-  "editor.accessibilityPageSize": 30,
-  "workbench.editor.splitInGroupLayout": "vertical",
-  "editor.tabSize": 10,
-  "editor.glyphMargin": false,
-  "editor.lineNumbers": "off",
-  "editor.scrollbar.horizontalScrollbarSize": 2
+  "editor.wordWrap": "on",
+  "editor.foldingMaximumRegions": 50,
+  "editor.wordWrapColumn": 100,
+  "editor.wrappingIndent": "same",
+  "html.format.wrapLineLength": 140,
+  "editor.insertSpaces": false
 }
