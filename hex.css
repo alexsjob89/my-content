@@ -3,14 +3,21 @@
     margin: none;
     text-decoration: none;
     outline: none;
-    /* overflow-x: none; */
+    /* overflow-x: hidden; */
+}
+
+body {
+    outline: hidden;
+    height: 100vh;
 }
 
 html {
-    overflow-x: hidden;
+    max-width: auto;
     list-style: none;
     background-color: none;
     outline: hidden;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 
@@ -25,6 +32,13 @@ html::-webkit-scrollbar-button {
 .navbar-content {
     padding-top: 10rem;
 } */
+
+.marketingPage {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    width: 100;
+    overflow-y: none;
+}
 
 .navbar {
     outline: none;
@@ -59,10 +73,16 @@ a:hover {
 }
 
 .slider {
+    justify-content: center;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 100rem;
+    height: 550px;
     max-width: 1000px;
     position: absolute;
-    margin: auto;
-    margin-top: 45rem;
+    margin-top: 60rem;
+    margin-left: -44rem;
+    padding-right: 102.5rem;
     left: 45rem;
 }
 
@@ -87,16 +107,18 @@ a:hover {
     text-align: center;
 }
 
-.left {
-    margin-left: -20rem;
+.right {
+    top: 31.5rem;
+    margin-left: 1rem;
 }
 
-.right {
-    margin-right: 20rem;
+.left {
+    top: 31.5rem;
+    margin-left: 99.5rem;
 }
 
 .dot-container {
-    display: flex;
+    display: grid;
     position: absolute;
     left: 110rem;
     top: 100rem;
@@ -109,6 +131,7 @@ a:hover {
     border: 1px solid white;
     width: 13px;
     height: 13px;
+    right: 100rem;
 }
 
 .slideButtons .dot-container {
