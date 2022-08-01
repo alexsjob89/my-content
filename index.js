@@ -1,6 +1,6 @@
 var slider_img = document.querySelector('.slider-img');
 var market = ['sound.jpg', 'coffee.jpg', 'workbench.jpg']
-var i = 0;
+var i = 1;
 
 function prev() {
     if (i <= 0) i = market.length;
