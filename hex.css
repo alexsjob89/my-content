@@ -7,16 +7,11 @@
 }
 
 body {
-    outline: hidden;
-    height: 100vh;
-}
-
-html {
-    max-width: auto;
+    max-width: 100%;
+    display: flex;
     list-style: none;
     background-color: none;
     outline: hidden;
-    box-sizing: border-box;
     overflow-x: hidden;
 }
 
@@ -27,11 +22,11 @@ html {
 
 html::-webkit-scrollbar-button {
     border: 4px;
-}
+} */
 
 .navbar-content {
     padding-top: 10rem;
-} */
+}
 
 .marketingPage {
     /* border: 1px solid black; */
@@ -41,9 +36,9 @@ html::-webkit-scrollbar-button {
 }
 
 .navbar {
-    outline: none;
-    position: fixed;
+    position: absolute;
     display: flex;
+    flex-direction: wrap;
     margin-top: -7px;
     margin-left: -8px;
     margin-right: -10px;
@@ -70,70 +65,127 @@ a:hover {
     position: absolute;
     margin-top: 7rem;
     font-size: 1.5rem;
+    left: 40rem;
 }
 
 .slider {
-    justify-content: center;
-    border: 1px solid black;
-    box-sizing: border-box;
+    outline: hidden;
+    position: absolute;
     width: 100rem;
-    height: 550px;
-    max-width: 1000px;
+    top: 20rem;
+    left: 18rem;
+    right: 20rem;
+}
+
+.img-box {
+    outline: hidden;
+    margin: none;
+    padding: 0;
+}
+
+.buttons {
     position: absolute;
-    margin-top: 60rem;
-    margin-left: -44rem;
-    padding-right: 102.5rem;
-    left: 45rem;
+    margin-top: -4px;
+    outline: hidden;
+    background-color: grey;
+    width: 75rem;
+    height: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.mySlide {
-    display: none;
-}
-
-.slideButtons {
-    position: relative;
-}
-
-.left,
-.right {
+.prev,
+.next {
     position: absolute;
-    background: none;
+    background-color: white;
+    border: none;
     border-radius: 50%;
-    height: 2rem;
-    width: 2rem;
-    border: 1px solid black;
+    height: 35px;
+    font-weight: 900;
     color: grey;
-    font-size: 1.5rem;
-    text-align: center;
+    top: 6px;
+    left: 15px;
 }
 
-.right {
-    top: 31.5rem;
-    margin-left: 1rem;
+.next {
+    left: 71.4rem;
 }
 
-.left {
-    top: 31.5rem;
-    margin-left: 99.5rem;
+.whatToOffer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15rem;
 }
 
-.dot-container {
-    display: grid;
+.headerOffer {
+    font-weight: 100;
+    font-size: 30px;
+    margin-top: -8rem;
+    margin-left: 30rem;
+    border-bottom: 5px solid rgb(0, 0, 0);
+    margin-bottom: 80px;
+}
+
+.offer-content {
     position: absolute;
-    left: 110rem;
-    top: 100rem;
-    gap: 5px;
+    display: flex;
 }
 
-.dot {
-    display: block;
-    background-color: grey;
-    border: 1px solid white;
-    width: 13px;
-    height: 13px;
-    right: 100rem;
+.design,
+.branding,
+.consultation,
+.promises {
+    width: 17.4rem;
+    height: 10rem;
+    padding-left: 20px;
+    line-height: 23px;
 }
 
-.slideButtons .dot-container {
+.design {
+    background-color: rgb(200, 200, 200);
+}
+
+.branding {
+    background-color: rgb(171, 171, 171);
+}
+
+.consultation {
     background-color: grey;
+    color: rgb(203, 203, 203);
+}
+
+.promises {
+    background-color: rgb(45, 45, 45);
+    color: white;
+}
+
+.pricing-plan {
+    position: absolute;
+    top: 70rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerpricing {
+    margin-top: -7rem;
+    margin-left: 31rem;
+    font-size: 30px;
+}
+
+.choose {
+    margin-left: 31rem;
+}
+
+.pricing-box {
+    display: flex;
+    position: absolute;
+    margin-left: 5rem;
+}
+
+.basicplan {
+    border: 1px solid black;
+    display: grid;
+    width: 20rem;
+    margin-left: 1rem;
+    justify-content: center;
 }

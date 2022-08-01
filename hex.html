@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
     <section class="navbar">
         <a href="#" class="home">Home</a>
         <a href="#" class="plans">Plans</a>
@@ -26,35 +25,81 @@
         <h1>MARKETING</h1>
     </div>
 
-    <section class="slider">
-
-        <div class="mySlide">
-            <img src="market/sound.jpg" style="width: 600px;">
+    <sction class="slider">
+        <div class="img-box">
+            <img src="market/coffee.jpg" width="1200" class="slider-img">
         </div>
-
-        <div class="mySlide">
-            <img src="market/workbench.jpg" style="width: 600px;">
+        <div class="buttons">
+            <button class="prev" onclick="prev()">Prev</button>
+            <button class="next" onclick="next()">Next</button>
         </div>
+        </section>
 
-        <div class="mySlide">
-            <img src="market/coffee.jpg" style="width: 600px;">
-        </div>
+        <section class="whatToOffer">
+            <h1 class="headerOffer">What We Offer</h1>
+            <div class="offer-content">
+                <div class="design">
+                    <h2>Design</h2>
+                    <p>Phasellus eget enim eu lectus <br>faucibus vestibulum. Suspendisse <br>sodales pellentesque elementum.</p>
+                </div>
 
-        <div class="slideButtons">
-            <button class="left" onclick="plusSlides(-1)"><i class="fa-solid fa-arrow-left"></i></button>
-            <button class="right" onclick="plusSlides(1)"><i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-    </section>
+                <div class="branding">
+                    <h2>Branding</h2>
+                    <p>Phasellus eget enim eu lectus <br>faucibus vestibulum. Suspendisse <br>sodales pellentesque elementum.</p>
+                </div>
 
-    <div class="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
+                <div class="consultation">
+                    <h2>Consultation</h2>
+                    <p>Phasellus eget enim eu lectus <br>faucibus vestibulum. Suspendisse <br>sodales pellentesque elementum.</p>
+                </div>
+
+                <div class="promises">
+                    <h2>Promises</h2>
+                    <p>Phasellus eget enim eu lectus <br>faucibus vestibulum. Suspendisse <br>sodales pellentesque elementum.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-plan">
+            <div class="headerpricing">Pricing Plans</div>
+            <div class="choose">Choose a pricing plan that fits your needs.</div>
+            <div class="pricing-box">
+
+                <div class="basicplan">
+                    <h2 class="basic">Basic</h2>
+                    <p><span>10GB</span>Storage</p>
+                    <p><span>10</span>Emails</p>
+                    <p><span>10</span>Domains</p>
+                    <p><span>Endless</span>Sipport</p>
+                    <p><span class="$month">$10</span>per month</p>
+                    <button class="signup">Sign Up</button>
+                </div>
+
+                <div class="basicplan">
+                    <h2 class="pro">Pro</h2>
+                    <p><span>25GB</span>Storage</p>
+                    <p><span>25</span>Emails</p>
+                    <p><span>25</span>Domains</p>
+                    <p><span>Endless</span>Sipport</p>
+                    <p><span class="$month">$25</span>per month</p>
+                    <button class="signup">Sign Up</button>
+                </div>
+
+                <div class="basicplan">
+                    <h2 class="premium">Premium</h2>
+                    <p><span>150GB</span>Storage</p>
+                    <p><span>50</span>Emails</p>
+                    <p><span>50</span>Domains</p>
+                    <p><span>Endless</span>Sipport</p>
+                    <p><span class="$month">$50</span>per month</p>
+                    <button class="signup">Sign Up</button>
+                </div>
+            </div>
+        </section>
 
 
 
-    <script src="hex.js"></script>
+        <script src="hex.js"></script>
 </body>
 
 </html>
