@@ -379,3 +379,37 @@ span {
     color: black;
     border: 2px solid black;
 }
+
+.footer {
+    position: relative;
+    margin-top: 160rem;
+    margin-left: 35rem;
+}
+
+.head {
+    font-size: 30px;
+}
+
+.tothetop {
+    background-color: black;
+    color: white;
+    width: 7rem;
+    margin-left: -1rem;
+    height: 2.5rem;
+    border: none;
+    font-size: 1rem;
+}
+
+.tothetop:hover {
+    background-color: rgb(211, 209, 209);
+    color: black;
+}
+
+.fa-solid {
+    margin-right: 6px;
+}
+
+.icons {
+    margin-left: -3.7rem;
+    margin-top: 2rem;
+}
