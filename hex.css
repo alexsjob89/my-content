@@ -9,9 +9,10 @@
 body {
     max-width: 100%;
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     background-color: none;
-    margin: 0;
+    margin: none;
     outline: hidden;
     overflow-x: hidden;
 }
@@ -43,8 +44,9 @@ html::-webkit-scrollbar-button {
     flex-direction: wrap;
     margin-top: -7px;
     margin-left: -8px;
-    margin-right: -10px;
+    margin-right: -50px;
     height: 3rem;
+    width: 120rem;
 }
 
 .navbar a {
@@ -56,7 +58,7 @@ html::-webkit-scrollbar-button {
     font-size: 1.5rem;
     color: black;
     font-weight: 50;
-    width: 25.8rem;
+    width: 26.2rem;
 }
 
 a:hover {
@@ -153,7 +155,7 @@ a:hover {
 
 .consultation {
     background-color: grey;
-    color: rgb(203, 203, 203);
+    color: rgb(222, 221, 221);
 }
 
 .promises {
@@ -166,6 +168,12 @@ a:hover {
     top: 70rem;
     display: flex;
     flex-direction: column;
+}
+
+.choose {
+    position: relative;
+    /* border: 1px solid black; */
+    left: -3rem;
 }
 
 .headerpricing {
@@ -193,32 +201,42 @@ a:hover {
     display: grid;
     width: 20rem;
     margin-left: 1rem;
+    margin-top: 40px;
     justify-content: center;
-    height: 35rem;
+    height: 39rem;
 }
 
 li {
     /* border: 0.5px solid black; */
-    border-bottom: 0.5px solid black;
+    border-bottom: 0.3px solid rgb(191, 190, 190);
     width: 20rem;
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: center;
 }
 
 .month {
     display: block;
+    font-size: 40px;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
 }
 
-span {}
+span {
+    margin-right: 5px;
+    font-weight: 900;
+}
 
 .signup {
+    position: relative;
     background-color: green;
     width: 150px;
     height: 60px;
-    margin-left: 95px;
-    margin-top: 50px;
+    margin-left: 70px;
+    margin-top: 20px;
     border: none;
     color: white;
+    top: 10px;
+    left: 15px;
 }
 
 .basic,
@@ -247,4 +265,66 @@ span {}
 
 .basicplan:hover {
     box-shadow: 0px 6px 11px 1px rgba(0, 0, 0, 0.48);
+}
+
+.headerW {
+    position: absolute;
+    display: inline-flex;
+    margin-top: 67rem;
+    margin-left: 20rem;
+    left: 14.5rem;
+    border-bottom: 5px solid rgb(0, 0, 0);
+    margin-bottom: 80px;
+    font-size: 30px;
+}
+
+.box-content {
+    position: absolute;
+    display: flex;
+    margin-top: 75rem;
+    margin-left: 2rem;
+    height: 45rem;
+}
+
+.content {
+    position: relative;
+    display: grid;
+    margin-left: 20px;
+    margin-bottom: 10rem;
+    box-shadow: 0px 6px 11px 1px rgba(0, 0, 0, 0.48);
+}
+
+.content:hover {
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.description,
+.avatar,
+.btn {
+    margin-left: 1rem;
+}
+
+.CEO {
+    position: absolute;
+    font-weight: 100;
+    opacity: 0.6;
+    margin-top: -30px;
+}
+
+.description {
+    line-height: 30px;
+}
+
+.btn {
+    /* background-color: grey; */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.btn:hover {
+    background-color: grey;
+    color: white;
 }
