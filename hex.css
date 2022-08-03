@@ -328,3 +328,54 @@ span {
     background-color: grey;
     color: white;
 }
+
+.contact-box {
+    margin-bottom: 20rem;
+    margin-left: 7rem;
+}
+
+.contactUs {
+    position: absolute;
+    top: 170rem;
+}
+
+.conContent {
+    position: relative;
+    display: grid;
+}
+
+.contactTitle {
+    margin-left: 35rem;
+    margin-bottom: 7rem;
+    border-bottom: 5px solid rgb(0, 0, 0);
+    font-size: 30px;
+    width: 135px;
+}
+
+.nameIn,
+.sendUs {
+    border: 1px solid rgb(188, 188, 188);
+    max-width: 100%;
+    width: 60rem;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.nameIn {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.sendUs {
+    background-color: black;
+    color: white;
+    border: none;
+    margin-left: 3px;
+    font-size: 1rem;
+}
+
+.sendUs:hover {
+    background-color: rgb(187, 187, 187);
+    color: black;
+    border: 2px solid black;
+}
