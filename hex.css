@@ -316,6 +316,47 @@ span {
     font-weight: 1000;
 }
 
+.howWorks {
+    font-size: 3.7rem;
+    text-align: center;
+    color: rgb(25, 208, 236);
+    text-shadow: -3px 3px 0px #00A1CE;
+}
+
+.browser-menu {
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid black;
+    top: 60rem;
+    left: 12rem;
+    width: 70rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-options {
+    display: block;
+}
+
+.optionsBox {
+    display: grid;
+    position: relative;
+    border: 1px solid black;
+    width: 20rem;
+    float: left;
+    margin-left: 40px;
+}
+
+.optionsBox2 {
+    display: grid;
+    position: relative;
+    border: 1px solid black;
+    width: 20rem;
+    float: right;
+    left: -9.9rem;
+    margin-left: 40px;
+}
+
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {
         display: none;
