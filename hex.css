@@ -323,11 +323,77 @@ span {
     text-shadow: -3px 3px 0px #00A1CE;
 }
 
+.menu-box {
+    /* border: 1px solid black; */
+    height: 15rem;
+    width: 35rem;
+    position: relative;
+    margin-top: 18rem;
+    margin-bottom: -5rem;
+    left: 18rem;
+    top: -5rem;
+    text-align: center;
+}
+
+.browseMenu {
+    /* margin-left: 15rem; */
+    color: rgb(25, 208, 236);
+    font-size: 3.5rem;
+    display: inline;
+}
+
+.placeOrder {
+    font-size: 1.3rem;
+    line-height: 20px;
+    opacity: 0.5;
+}
+
+.phone {
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+.pages {
+    display: inline;
+    position: relative;
+    border: 1px solid rgb(211, 211, 211);
+    top: 30px;
+    margin-left: 30px;
+    font-size: 1.3rem;
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 8px;
+    color: rgb(102, 102, 102);
+}
+
+.pages1 {
+    display: inline;
+    position: relative;
+    border: 1px solid rgb(211, 211, 211);
+    top: 30px;
+    margin-left: 30px;
+    font-size: 1.3rem;
+    padding: 15px;
+    padding-left: 43px;
+    padding-right: 43px;
+    border-radius: 8px;
+    color: rgb(102, 102, 102);
+}
+
+.pages:hover {
+    background-color: rgb(25, 208, 236);
+}
+
+.pages1:hover {
+    background-color: rgb(25, 208, 236);
+}
+
 .browser-menu {
     position: relative;
     box-sizing: border-box;
-    border: 1px solid black;
-    top: 60rem;
+    /* border: 1px solid black; */
+    top: 45rem;
     left: 12rem;
     width: 70rem;
     display: flex;
@@ -335,13 +401,13 @@ span {
 }
 
 .menu-options {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 70rem;
 }
 
 .optionsBox {
     display: inline-block;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 30rem;
     margin-left: 50px;
     margin-top: 60px;
@@ -381,8 +447,22 @@ input {
 
 .seefullmenu {
     position: absolute;
-    top: 45rem;
-    right: 50%;
+    top: 78rem;
+    right: 35%;
+    font-size: 1.3rem;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 8px;
+    border: none;
+    background: none;
+    background-color: rgb(25, 208, 236);
+    cursor: pointer;
+}
+
+.seefullmenu:hover {
+    background-color: #00A1CE;
+    border: 1px solid rgb(72, 72, 253);
 }
 
 .burger {
@@ -395,6 +475,52 @@ input {
 
 .parag {
     line-height: 25px;
+}
+
+.checkout {
+    position: relative;
+    /* border: 1px solid black; */
+    margin-top: 65rem;
+    left: 10rem;
+    bottom: 20rem;
+    /* width: 74rem; */
+}
+
+.simpleCheckout {
+    position: relative;
+    /* border: 1px solid black; */
+    width: 40rem;
+    height: 23rem;
+    float: right;
+    margin-top: 10rem;
+}
+
+.orderWith {
+    font-size: 3.5rem;
+    margin-top: -2rem;
+    color: rgb(25, 208, 236);
+}
+
+.parag2 {
+    margin-top: -2rem;
+    font-size: 1.5rem;
+    color: rgb(139, 139, 139);
+}
+
+.seeFaq {
+    font-size: 1.2rem;
+    border: none;
+    background: none;
+    padding: 1.2rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 8px;
+    background-color: rgb(25, 208, 236);
+}
+
+.seeFaq:hover {
+    background-color: #00A1CE;
+    border: 1px solid rgb(72, 72, 253);
 }
 
 @media screen and (max-width: 600px) {
