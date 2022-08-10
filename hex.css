@@ -523,6 +523,55 @@ input {
     border: 1px solid rgb(72, 72, 253);
 }
 
+.call-store {
+    display: flex;
+    width: 70rem;
+    height: 36rem;
+    margin-left: 14rem;
+    margin-bottom: 10rem;
+}
+
+.imageStore {
+    position: relative;
+    margin-left: 37rem;
+}
+
+.box-store {
+    position: absolute;
+    margin-top: 2rem;
+    padding-left: 10px;
+}
+
+.callourstore {
+    color: rgb(25, 208, 236);
+    font-size: 3.5rem;
+}
+
+.callDetails {
+    font-size: 1.5rem;
+    opacity: 0.5;
+    line-height: 30px;
+    margin-top: -2rem;
+}
+
+.phoneNumber {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: 1.3rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 8px;
+    border: none;
+    background: none;
+    background-color: rgb(25, 208, 236);
+    cursor: pointer;
+}
+
+.phoneNumber:hover {
+    background-color: #00A1CE;
+    border: 1px solid rgb(72, 72, 253);
+}
+
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {
         display: none;
