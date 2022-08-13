@@ -1,19 +1,28 @@
-var slider_img = document.querySelector('.slider-img');
-var market = ['sound.jpg', 'coffee.jpg', 'workbench.jpg']
-var i = 1;
+// let button = document.querySelector('button')
+// let div = document.querySelector('div')
 
-function prev() {
-    if (i <= 0) i = market.length;
-    i--;
-    return setImg();
-}
 
-function next() {
-    if (i >= market.length - 1) i = -1;
-    i++;
-    return setImg();
-}
+// div.style.display = 'none';
 
-function setImg() {
-    return slider_img.setAttribute('src', 'market/' + market[i]);
-}
+// button.onclick = () => {
+// if(div.style.display === 'none') {
+//     div.style.display = 'block';
+// } else{
+//     div.style.display = 'none';
+// }
+// };
+
+
+var div = document.querySelector("div");
+var button = document.querySelector("button");
+
+button.onclick = function() {
+
+    if (div.className == "open") {
+        div.className = ""
+        button.innerHTML = "Show More"
+    } else {
+        div.className == "open";
+        button.innerHTML = "Show Less"
+    }
+};

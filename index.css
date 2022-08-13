@@ -1,34 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
-/* * {box-sizing:border-box} */
-
-.slider {
-    position: absolute;
-    padding: 100px;
-    height: 400px;
-    width: 400px;
-    top: 200px;
-    left: 400px;
+/* div {
+    border: 1px solid black;
+    margin-top: 10rem;
+    width: 12rem;
+    margin-left: 9rem;
 }
 
-.img-box img {
-    position: absolute;
-    width: 50rem;
-    height: 40rem;
-    border-radius: 10px;
-}
-
-.btn {
-    border: none;
-    background: rgb(3, 77, 3);
+button {
     position: relative;
-    top: 41rem;
+    top: 10rem;
+    left: 10rem;
     font-size: 30px;
-    padding: 10px 30px;
-    color: white;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+} */
+
+div {
+    border: 1px solid black;
+    width: 20rem;
+    height: 30rem;
+    margin-left: 30rem;
+    margin-top: 10rem;
 }
 
-.btn:hover {
-    background-color: rgb(68, 176, 68);
+button {
+    margin-left: 30px;
+    font-size: 4.5rem;
+    border-radius: 8px;
 }
