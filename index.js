@@ -1,99 +1,68 @@
-// let button = document.querySelector('button')
-// let div = document.querySelector('div')
+// console.log("%c hey thre i am being logged  to the console", "color: pink; font-size: 30px; border: 1px solid white");
+
+// alert("hey there");
+// alert("hello again");
+
+// alert("error example");
+// ["hello again!", "hey there!"].forEach(alert);
 
 
-// div.style.display = 'none';
-
-// button.onclick = () => {
-// if(div.style.display === 'none') {
-//     div.style.display = 'block';
-// } else{
-//     div.style.display = 'none';
-// }
-// };
-
-
-// var div = document.querySelector("div");
-// var button = document.querySelector("button");
-
-// button.onclick = function() {
-
-//     if (div.className == "open") {
-//         div.className = ""
-//         button.innerHTML = "Show More"
+// function num(value) {
+//     if (value % 2 == 0) {
+//         console.log(true);
 //     } else {
-//         div.className == "open";
-//         button.innerHTML = "Show Less"
+//         console.log(false);
 //     }
-// };
-
-
-
-// const draggables = document.querySelectorAll('.draggable')
-// const containers = document.querySelectorAll('.container')
-
-
-// draggables.forEach(draggable => {
-//     draggable.addEventListener('dragstart', () => {
-//       draggable.classList.add('dragging')
-//     })
-
-//     draggable.addEventListener('dragend', () => {
-//         draggable.classList.remove('dragging')
-//       })
-// })
-
-// containers.forEach(container => {
-//     container.addEventListener('dragover',  e => {
-//         e.preventDefault()
-//         const afterElement = getDragAfterElement(container, e.clientY)
-//         const draggable = document.querySelector('.dragging')
-//         container.appendChild(draggable)
-//     })
-// })
-
-// function getDragAfterElement(container, y) {
-//   const draggableElements = [...container.querySelectorAll('.draggable:not(.dragging)')]
-
-//   draggableElements.reduce((closest, child) => {
-//     const box = child.getBoundingClientReact()
-//     console.log(box);
-//   },{ offset: Number.POSITIVE_INFINITY} )
 // }
 
-// const message = document.querySelector("#message");
-// const myInput = document.querySelector("#myInput");
+// num(2);
 
-// myInput.addEventListener("focus", function () {
-//     message.textContent = myInput.value;
-// } );
-
-// document.addEventListener('dblclick', () => {
-//     document.documentElement.requestFullscreen().catch((e) => {
-//         console.log(e);
-//     })
-// })
-
-
-// document.getElementById("myButton").onclick = function() {
-
-//     var myName = document.getElementById("myText").value;
-//     console.log("hello",myName);
+// function isEven(value) {
+//     if (value%2 == 0) {
+//         console.log("Even number");
+//     } else {
+//         console.log("Odd number");
+//     }
 // }
 
+// isEven(1);
 
 
-const myForm = document.getElementById('myForm');
+// const  game = "sonic"
+// game = "mario"
 
-myForm.addEventListener("submit", (e) => {
-    e.preventDefault();
+// console.log(game);
 
-    const request = new XMLHttpRequest();
 
-    request.open("post", "login.php");
-    request.onload = function() {
-        console.log(request.responseText);
-    }
+// const currentYear = new Date().getFullYear();
+// console.log(currentYear);
 
-    request.send(new FormData(myForm));
-});
+// let username = "dreamer123"
+// console.log(username);
+
+// username = "harry potter"
+// console.log(username);
+
+
+
+
+// console.log(5 + 2);
+// console.log(5 % 2);
+// console.log(5 ** 3);
+// console.log();
+// console.log();
+// console.log();
+
+
+// let score = 99;
+
+// console.log(score);
+// console.log(score--);
+// console.log(score);
+
+// let sum = 5 + 3 * 2 - 1 * (1 + 1)
+
+// console.log(sum);
+
+
+let x = 7;
