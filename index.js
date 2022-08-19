@@ -1,18 +1,12 @@
-const fruits = new Set();
+let nums = [1, 2, 3, 4, 5]
 
-fruits.add('apple');
-fruits.add('banana');
-fruits.add('orange');
-fruits.add('plum').add('pear').add('apricots');
+let weakSet = new weakSet();
 
-fruits.add('apple');
+weakSet.add(nums);
 
-fruits.delete('orange');
+nums = null;
 
-let check = fruits.has('apple');
+console.log(nums);
 
-console.log(fruits);
-
-console.log(fruits);
-console.log(check);
-console.log(fruits.size);
+console.log(nums);
+console.log(weakSet);
