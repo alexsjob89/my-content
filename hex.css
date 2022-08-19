@@ -565,6 +565,7 @@ input {
     background: none;
     background-color: rgb(25, 208, 236);
     cursor: pointer;
+    color: white;
 }
 
 .phoneNumber:hover {
