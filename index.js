@@ -1,12 +1,10 @@
-let nums = [1, 2, 3, 4, 5]
+const myPara = document.getElementById('myPara')
 
-let weakSet = new weakSet();
+myPara.classList.add("bold", "big-font")
+myPara.classList.remove("bold")
+myPara.classList.replace("big-font", "red-bg")
 
-weakSet.add(nums);
+myPara.classList.toggle("red-bg");
+myPara.classList.toggle("red-bg");
 
-nums = null;
-
-console.log(nums);
-
-console.log(nums);
-console.log(weakSet);
+console.log(myPara.classList);

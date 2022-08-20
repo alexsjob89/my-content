@@ -20,3 +20,19 @@
 p {
     display: none;
 } */
+
+.bold {
+    font-weight: bold;
+}
+
+.red-bg {
+    background: red;
+}
+
+.white-text {
+    color: white;
+}
+
+.big-font {
+    font-size: 36px;
+}
