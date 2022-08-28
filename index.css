@@ -1,28 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
-#moreBtn {
-    /* border: 1px solid black; */
-    width: 10rem;
-    margin-top: 10rem;
-}
-
-#btn {
-    background-color: blue;
-    padding: 20px;
+li {
+    list-style-type: none;
+    border: 1px solid black;
+    width: 7rem;
+    background-color: black;
     color: white;
-    top: 25rem;
+    margin-top: 1rem;
+    padding: 20px;
     border-radius: 10px;
-    margin-bottom: 20px;
     text-align: center;
 }
 
-.content {
-    /* display: none; */
-    margin-top: -24.3rem;
-}
-
-.par {
-    /* border: 1px solid black; */
-    width: 50rem;
-    margin-left: 11rem;
-    margin-top: 20px;
+li:hover {
+    background-color: rgb(67, 67, 67);
 }

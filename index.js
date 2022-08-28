@@ -1,18 +1,11 @@
-const theParent = document.querySelector('#moreBtn');
-const contentPara = document.querySelector('.content');
-// theParent.addEventListener('click', doSomething, false);
+// const container = document.querySelectorAll('.container');
 
-// function doSomething(e) {
-//     if (e.target !== e.currentTarget) {
-//         var clickedItem = e.target.id;
-//         // alert('helllo' + clickedItem);
-//     }
 
-//     console.log(theParent, 'clicked');
+// for (i = 0; i < container.length; i++) {
+//     container[i].style.fontSize = '40px';
+//     container[i].style.color = 'blue';
 // }
+let ul = document.querySelector('ul')
 
-changeColor(contentPara)
-
-function changeColor(contentPara) {
-    contentPara.style.backgroundColor = 'red';
-}
+console.log(ul.parentNode);
+console.log(ul.parentElement);
