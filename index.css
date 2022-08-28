@@ -1,1 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+#moreBtn {
+    /* border: 1px solid black; */
+    width: 10rem;
+    margin-top: 10rem;
+}
+
+#btn {
+    background-color: blue;
+    padding: 20px;
+    color: white;
+    top: 25rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content {
+    /* display: none; */
+    margin-top: -24.3rem;
+}
+
+.par {
+    /* border: 1px solid black; */
+    width: 50rem;
+    margin-left: 11rem;
+    margin-top: 20px;
+}
