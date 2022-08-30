@@ -1,16 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
-li {
-    list-style-type: none;
-    border: 1px solid black;
-    width: 7rem;
-    background-color: black;
-    color: white;
-    margin-top: 1rem;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+#sports {
+    margin-left: 30rem;
+    margin-top: 20rem;
 }
 
-li:hover {
-    background-color: rgb(67, 67, 67);
+div {
+    font-size: 30px;
 }
