@@ -56,14 +56,63 @@
 //     document.getElementById("fruits").innerHTML = ages.find(checkAge);
 // }
 
-let text = "";
-const fruits = ["apple", "orange", "cherry"];
-fruits.forEach(myFunction);
+// let text = "";
+// const fruits = ["apple", "orange", "cherry"];
+// fruits.forEach(myFunction);
 
-document.getElementById("fruits").innerHTML = text;
+// document.getElementById("fruits").innerHTML = text;
 
-function myFunction(item, index) {
-    text += index + ": " + item + "<br>";
+// function myFunction(item, index) {
+//     text += index + ": " + item + "<br>";
 
 
+// }
+
+
+// let text = "ABCDEFG";
+// const myArr = Array.from(text);
+
+// document.getElementById("fruits").innerHTML = myArr;
+
+// Array.prototype.myUcase = function() {
+//     for (let i = 0; i < this.length; i++) {
+//         this[i] = this[i].toUpperCase();
+//     }
+// };
+
+// const fruits = ["banana", "orange", "apple", "mango"];
+// fruits.push("kiwi", "lemon")
+
+// document.getElementById("fruits").innerHTML = fruits;
+
+// const fruits = ["Banana", "Orange", "lemon", "Apple", "Mango"];
+
+// const citrus = fruits.slice(0, 2);
+
+// document.getElementById("fruits").innerHTML = citrus;
+
+// function getSum(total, num) {
+//     return total - num;
+// }
+
+class Car {
+    constructor(brand) {
+        this.carname = brand;
+    }
+    present() {
+        return 'I have a ' + this.carname;
+    }
 }
+
+class Model extends Car {
+    constructor(brand, mod) {
+        super(brand);
+        this.model = mod;
+    }
+    show() {
+        return this.present() + ', it is a ' + this.model;
+    }
+}
+
+mycar = new Model("Ford", "Mustang");
+document.getElementById("fruits").innerHTML = mycar.show();
