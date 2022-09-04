@@ -56,7 +56,7 @@
 //     document.getElementById("fruits").innerHTML = ages.find(checkAge);
 // }
 
-// let text = "";
+// var text = "";
 // const fruits = ["apple", "orange", "cherry"];
 // fruits.forEach(myFunction);
 
@@ -95,24 +95,45 @@
 //     return total - num;
 // }
 
-class Car {
-    constructor(brand) {
-        this.carname = brand;
-    }
-    present() {
-        return 'I have a ' + this.carname;
-    }
-}
+// class Car {
+//     constructor(brand) {
+//         this.carname = brand;
+//     }
+//     present() {
+//         return 'I have a ' + this.carname;
+//     }
+// }
 
-class Model extends Car {
-    constructor(brand, mod) {
-        super(brand);
-        this.model = mod;
-    }
-    show() {
-        return this.present() + ', it is a ' + this.model;
-    }
-}
+// class Model extends Car {
+//     constructor(brand, mod) {
+//         super(brand);
+//         this.model = mod;
+//     }
+//     show() {
+//         return this.present() + ', it is a ' + this.model;
+//     }
+// }
 
-mycar = new Model("Ford", "Mustang");
-document.getElementById("fruits").innerHTML = mycar.show();
+// mycar = new Model("Ford", "Mustang");
+// document.getElementById("fruits").innerHTML = mycar.show();
+
+// const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+// const d = new Date();
+// let name = month[d.getMonth()];
+
+//
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+}
