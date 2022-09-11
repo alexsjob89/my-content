@@ -1,185 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
-* {
+
+/* * {
     text-decoration: none;
     box-sizing: border-box;
     margin: none;
     /* outline: none; */
-}
 
-body {
-    background-image: url('/animalimg/2490733.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.navbar {
-    background: fixed;
-    position: fixed;
-    overflow: none;
-    margin-top: -10rem;
-    /* margin-left: -6.7px; */
-    display: flex;
+}
+body {}
+*/
+/* .container {
+    overflow: hidden;
+    position: absolute;
     border: 1px solid black;
-    max-width: 113rem;
-    outline: none;
+    width: 20rem;
+    height: 10rem;
 }
 
-.container {
+.el1 {
+    background-color: red;
+    width: 10rem;
+    height: 10px;
+    animation: mymove1 3s;
+    animation-direction: right;
+}
+
+.el2 {
     position: absolute;
-    top: 15px;
-    left: 100rem;
+    background-color: red;
+    bottom: 0;
+    width: 10rem;
+    height: 10px;
+    animation: mymove2 3s;
+    animation-direction: left;
 }
 
-.bar1,
-.bar2,
-.bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: rgb(255, 255, 255);
-    margin: 6px 0;
-    transition: 0.4s;
+.el3 {
+    background-color: red;
+    height: 5rem;
+    width: 10px;
+    animation: mymove3 3s;
+    animation-direction: bottom;
 }
 
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {
-    opacity: 0;
-}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
-
-.navcontainer {
-    position: relative;
-    margin-right: 20rem;
-    left: 60rem;
-    top: 15px;
-    font-size: 30px;
-}
-
-a {
-    margin-left: 30px;
-    color: rgb(217, 216, 216);
-}
-
-a:hover {
-    padding: 5px;
-    text-transform: uppercase;
-    color: rgb(245, 245, 131);
-}
-
-.title {
+.el4 {
     position: absolute;
-    margin-left: 8rem;
-    top: 5px;
-    font-size: 40px;
-    border: 1px solid rgb(217, 216, 216);
-    color: rgb(217, 216, 216);
-    padding: 7px;
-}
-
-.logo {
-    clip-path: polygon(50% 16%, 100% 12%, 58% 100%, 39% 100%, 0 11%);
-}
-
-.subheader-con {
-    position: relative;
-    border-radius: 20px;
-    border: 1px solid white;
-    max-width: 70rem;
-    height: 30rem;
-    margin-top: 10rem;
-}
-
-
-/* .subheader-con:hover {
-    border: 1px solid rgb(162, 162, 162);
-} */
-
-.mySlide {
-    display: none;
-}
-
-img {
-    width: 60rem;
-    height: 30rem;
-    position: absolute;
-    align-items: center;
-    margin-left: 5rem;
-    margin-top: 0;
-}
-
-.prev,
-.next {
-    position: absolute;
-    cursor: pointer;
-    transition: 0.2s ease;
-    top: 45%;
-    width: 5rem;
-    height: 4rem;
-    font-size: 50px;
-    text-align: center;
-    padding-top: 6px;
-    color: rgb(90, 149, 245);
-    /* border: 1px solid white; */
-    user-select: none;
-}
-
-.next {
+    background-color: red;
     right: 0;
-    border-radius: 50% 0 0 50%;
+    height: 5rem;
+    width: 10px;
+    animation: mymove4 3s;
+    animation-direction: u;
 }
 
-.prev {
-    border-radius: 0 50% 50% 0;
+@keyframes mymove1 {
+  from {left: 0px;}
+  to {left: 100rem;}
 }
 
-.next:hover,
-.prev:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: white;
-}
-
-.numbertext {
-    position: absolute;
-    color: white;
-    font-size: 20px;
-    top: 0;
-    padding: 15px;
-}
-
-.dot {
-    background-color: rgb(90, 149, 245);
-    border-radius: 50%;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    margin: 0 2px;
-    margin-top: -13px;
-}
-
-.active,
-.dot:hover {
-    background-color: white;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
+@keyframes mymove2 {
+  from {left: 0px;}
+  to {left: 100rem;}
+} */
