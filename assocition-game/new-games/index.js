@@ -39,8 +39,8 @@ class Sprite {
 
     update() {
         this.draw()
-        this.attacBox.position.x, this.position.x - this.attacBox.offset.s
-        this.attacBox.position.y,
+        this.attacBox.position.x, this.position.x - this.attacBox.offset,
+            this.attacBox.position.y,
 
             this.position.x += this.velocity.x
         this.position.y += this.velocity.y
@@ -116,6 +116,15 @@ const keys = {
 }
 
 
+function rectangularCollision({ rectangle1, rectangle2 }) {
+    return {
+        rectangle1.attacBox.position.x + rectangle1.attacBox.width >=
+        rectangle2.position.x && rectangle1.attacBox.position.x <= rectangle2.position.x + rectangle2.width && rectangle1.attacBox.position.y + rectangle1.attacBox.height >= rectangle2.position.y && rectangle1.attacBox.position.y <= rectangle2.position.y + rectangle2.height
+
+    }
+}
+
+
 function animate() {
     window.requestAnimationFrame(animate)
     c.fillStyle = 'black'
@@ -139,12 +148,27 @@ function animate() {
     }
 
     if (
-        player.attacBox.position.x + player.attacBox.width >=
-        enemy.position.x && player.attacBox.position.x <= enemy.position.x + enemy.width && player.attacBox.position.y + player.attacBox.height >= enemy.position.y && player.attacBox.position.y <= enemy.position.y + enemy.height && player.isAttacking
+        rectangularCollision({
+            rectangle1: player,
+            rectangle2: enemy
+        }) &&
+        player.isAttacking
     ) {
         player.isAttacking = false
         console.log('run')
     }
+
+    if (
+        rectangularCollision({
+            rectangle1: enemy,
+            rectangle2: player
+        }) &&
+        enemy.isAttacking
+    ) {
+        enemy.isAttacking = false
+        console.log('enemy attack succesfull')
+    }
+
 }
 
 animate()
@@ -162,10 +186,11 @@ window.addEventListener('keydown', (event) => {
             break
         case 'w':
             player.velocity.y = -20
-        case ' ' {
-            player.attack()
-            break
-        }
+        case ' ':
+            {
+                player.attack()
+                break
+            }
 
         case 'ArrowRight':
             keys.ArrowRight.pressed = true
@@ -177,6 +202,9 @@ window.addEventListener('keydown', (event) => {
             break
         case 'ArrowUp':
             enemy.velocity.y = -20
+            break
+        case 'arrowDown':
+            enemy.isAttacking = true
             break
     }
     console.log(event.key)
