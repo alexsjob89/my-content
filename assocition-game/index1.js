@@ -1,8 +1,13 @@
-import NotesView from "./NotesView.js";
+// this is get started button//
+const createAccount = document.querySelector('#create-account')
+const getStarted = document.querySelector('#getStarted')
 
-const app = document.getElementById('app');
-const view = new NotesView(app, {
-    onNoteSelect() {
-        console.log("Note has been selected!");
+createAccount.style.display = 'none'
+
+getStarted.onclick = () => {
+    if (createAccount.style.display === 'none') {
+        createAccount.style.display = 'block';
+    } else {
+        createAccount.style.display = 'none';
     }
-});
+};

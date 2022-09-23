@@ -26,6 +26,7 @@
 .login {
     margin-right: 2rem;
     margin-top: -35px;
+    cursor: pointer;
 }
 
 .login:hover {
@@ -33,7 +34,7 @@
 }
 
 .login:hover {
-    transition: 1s;
+    transition: 0.5s;
     border: 1px solid green;
     padding: 5px;
     border-radius: 8px;
@@ -52,6 +53,7 @@
     margin-right: 20px;
     border-radius: 8px;
     color: white;
+    cursor: pointer;
 }
 
 .getStarted:hover {
@@ -60,6 +62,7 @@
 }
 
 .navBox {
+    display: flex;
     margin-left: 40rem;
     font-size: 24px;
     margin-top: -25px;
@@ -67,8 +70,61 @@
 
 a {
     margin-left: 30px;
+    color: black;
+    font-weight: 70;
+}
+
+a:hover {
+    color: green;
 }
 
 .fa-caret-down {
     margin-left: 5px;
+}
+
+.three {
+    color: green;
+}
+
+.create-account {
+    /* display: none; */
+    display: block;
+    position: absolute;
+    background-color: bisque;
+    /* border: 1px solid black; */
+    box-shadow: -8px 12px 15px 1px rgba(0, 0, 0, 0.81);
+    top: 20rem;
+    left: 20rem;
+    width: 30rem;
+    height: 20rem;
+    border-radius: 10px;
+}
+
+input {
+    display: block;
+    border-radius: 10px;
+    border: none;
+    /* border: 1px solid rgb(219, 219, 219); */
+    width: 28rem;
+    height: 40px;
+    font-size: 17px;
+    padding-left: 5px;
+    margin-left: 11px;
+    margin-top: 10px;
+    outline: none;
+}
+
+.submit {
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: white;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    padding: 15px 10rem 15px 10rem;
+    border: none;
+    background-color: rgb(13, 107, 6);
+    border-radius: 0 0 10px 10px;
+    -webkit-box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.81);
+    box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.81);
+    cursor: pointer;
 }
