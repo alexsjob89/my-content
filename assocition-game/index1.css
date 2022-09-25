@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
 * {
     text-decoration: none;
-    /* overflow: hidden; */
+}
+
+body {
+    overflow-y: hidden;
 }
 
 .logo {
@@ -61,17 +64,37 @@
     transition: 1.5s;
 }
 
-.navBox {
+.navBar {
+    background-color: white;
+    justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
     display: flex;
-    margin-left: 40rem;
+    align-items: stretch;
+    box-sizing: border-box;
+    position: fixed;
+    border: 1px solid black;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+}
+
+.navBox {
+    border: 1px solid black;
+    overflow: hidden;
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-left: 20rem;
     font-size: 24px;
     margin-top: -25px;
+    min-width: 100rem;
+    height: 30px;
 }
 
 a {
-    margin-left: 30px;
     color: black;
     font-weight: 70;
+    margin-left: 20px;
+    /* left: 20rem; */
 }
 
 a:hover {
@@ -94,7 +117,7 @@ a:hover {
     /* border: 1px solid black; */
     box-shadow: -8px 12px 15px 1px rgba(0, 0, 0, 0.81);
     top: 20rem;
-    left: 20rem;
+    left: 55rem;
     width: 30rem;
     height: 20rem;
     border-radius: 10px;
@@ -127,4 +150,50 @@ input {
     -webkit-box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.81);
     box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.81);
     cursor: pointer;
+}
+
+.loginSign {
+    /* display: none; */
+    display: block;
+    position: absolute;
+    background-color: bisque;
+    /* border: 1px solid black; */
+    box-shadow: -8px 12px 15px 1px rgba(0, 0, 0, 0.81);
+    top: 20rem;
+    left: 20rem;
+    width: 30rem;
+    height: 15rem;
+    border-radius: 10px;
+}
+
+.logButton {
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: white;
+    margin-left: 2.6rem;
+    margin-top: 1.5rem;
+    padding: 15px 10rem 15px 10rem;
+    border: none;
+    background-color: rgb(13, 107, 6);
+    border-radius: 0 0 10px 10px;
+    -webkit-box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.81);
+    box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.81);
+    cursor: pointer;
+}
+
+.slideScroll {
+    position: absolute;
+    display: flex;
+    border: 1px solid black;
+    min-width: 100%;
+    height: 30rem;
+    box-sizing: border-box;
+    margin-top: 15rem;
+    margin-bottom: 20rem;
+}
+
+.imgGrid {
+    position: relative;
+    border-radius: 50px;
+    display: table-column-group;
 }
