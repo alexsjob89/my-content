@@ -4,14 +4,18 @@
 }
 
 body {
-    overflow-y: hidden;
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    outline: none;
+    overflow-x: hidden;
 }
 
 .logo {
     font-size: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 20px;
 }
 
@@ -28,7 +32,8 @@ body {
 
 .login {
     margin-right: 2rem;
-    margin-top: -35px;
+    margin-left: 1rem;
+    margin-top: 4px;
     cursor: pointer;
 }
 
@@ -49,11 +54,14 @@ body {
 }
 
 .getStarted {
+    text-align: center;
     background: none;
     border: none;
+    margin-left: 35rem;
+    margin-top: 5px;
+    height: 40px;
+    width: 9rem;
     background-color: rgb(2, 146, 2);
-    padding: 10px;
-    margin-right: 20px;
     border-radius: 8px;
     color: white;
     cursor: pointer;
@@ -66,35 +74,29 @@ body {
 
 .navBar {
     background-color: white;
-    justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
-    display: flex;
+    -webkit-box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.69);
+    box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.69);
+    outline: none;
+    justify-content: flex-start;
+    display: inline-flex;
     align-items: stretch;
     box-sizing: border-box;
     position: fixed;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    margin-top: -8px;
+    margin-left: -8px;
     width: 100%;
     height: 50px;
     z-index: 1;
 }
 
-.navBox {
-    border: 1px solid black;
-    overflow: hidden;
-    align-items: stretch;
-    display: flex;
-    flex-wrap: wrap-reverse;
-    margin-left: 20rem;
-    font-size: 24px;
-    margin-top: -25px;
-    min-width: 100rem;
-    height: 30px;
-}
-
 a {
+    position: relative;
     color: black;
     font-weight: 70;
     margin-left: 20px;
-    /* left: 20rem; */
+    left: 10rem;
+    top: 1rem;
 }
 
 a:hover {
@@ -110,11 +112,9 @@ a:hover {
 }
 
 .create-account {
-    /* display: none; */
     display: block;
     position: absolute;
     background-color: bisque;
-    /* border: 1px solid black; */
     box-shadow: -8px 12px 15px 1px rgba(0, 0, 0, 0.81);
     top: 20rem;
     left: 55rem;
@@ -127,7 +127,6 @@ input {
     display: block;
     border-radius: 10px;
     border: none;
-    /* border: 1px solid rgb(219, 219, 219); */
     width: 28rem;
     height: 40px;
     font-size: 17px;
@@ -150,6 +149,10 @@ input {
     -webkit-box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.81);
     box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.81);
     cursor: pointer;
+}
+
+.submit:hover {
+    background-color: black;
 }
 
 .loginSign {
@@ -181,19 +184,109 @@ input {
     cursor: pointer;
 }
 
-.slideScroll {
-    position: absolute;
-    display: flex;
-    border: 1px solid black;
-    min-width: 100%;
-    height: 30rem;
-    box-sizing: border-box;
-    margin-top: 15rem;
-    margin-bottom: 20rem;
+.logButton:hover {
+    background-color: black;
 }
 
-.imgGrid {
+.slideScroll {
     position: relative;
-    border-radius: 50px;
-    display: table-column-group;
+    display: inline-flex;
+    flex-grow: inherit;
+    top: 20rem;
+    margin-left: -8px;
+    margin-right: -10rem;
+}
+
+.imgBox {
+    box-sizing: border-box;
+    width: 72rem;
+    height: 47rem;
+    margin-left: 9rem;
+    border: 1px solid black;
+    border-radius: 20%;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 15% 85%, 0% 85%);
+    background-color: green;
+}
+
+img {
+    outline: none;
+    border-radius: 10px;
+    margin: 20px;
+    border: 2px solid greenyellow;
+    transition: 2s;
+    top: 8rem;
+}
+
+img:hover {
+    transform: scale(1.5);
+}
+
+.img5,
+.img6,
+.img7 {
+    left: 8rem;
+    position: relative;
+    margin-left: 3rem;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+    margin-left: 2.5rem;
+    position: relative;
+}
+
+.get-template,
+.explore {
+    text-align: center;
+    margin-left: 3rem;
+    top: 15rem;
+    left: 27rem;
+    font-size: 20px;
+    /* border: 1px solid black; */
+    padding: 25px;
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+}
+
+.explore {
+    color: black;
+    background: none;
+}
+
+.explore:hover {
+    background-color: green;
+    color: white;
+}
+
+.get-template:hover {
+    background-color: rgb(127, 192, 28);
+}
+
+.presenting {
+    position: relative;
+    left: 26rem;
+    top: 12rem;
+}
+
+.title {
+    position: relative;
+    left: 23rem;
+    top: 11rem;
+    font-size: 45px;
+}
+
+.box-included {
+    border: 1px solid black;
+    position: relative;
+    top: 23rem;
+    left: 19.5rem;
+    width: 50rem;
+    text-align: center;
+}
+
+.whatIs {
+    font-size: 40px;
 }

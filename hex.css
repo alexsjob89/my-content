@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
-
-/* body {
+body {
     overflow-x: hidden;
     background-color: black;
     color: white;
@@ -15,4 +14,4 @@
     border-radius: 50%;
     margin: 10px 0;
     will-change: transform;
-} */
+}

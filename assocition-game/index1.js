@@ -40,3 +40,24 @@ createAccount.addEventListener("create-account", (e) => {
         alert("the form was submitted!!")
     }
 })
+
+// gsap.fromTo('.imgGrid', { x: 40, opacity: -0.5, duration: 4 }, { x: 20, opacity: 2, duration: 4 })
+
+// gsap.defaults({ duration: 20, ease: 'none' });
+
+// let windowWrap = gsap.utils.wrap(0, window.innerWidth),
+//     windowYoyo = gsap.utils.wrapYoyo(0, window.innerWidth),
+
+//     gsap.to(".img1", {
+//         x: 10000,
+//         modifiers: {
+//             x: x => windowWrap(parseFloat(x)) + "px"
+//         }
+//     });
+
+// gsap.to(".img7", {
+//     x: 10000,
+//     modifiers: {
+//         x: x => windowYoyo(parseFloat(x)) + "px"
+//     }
+// });
