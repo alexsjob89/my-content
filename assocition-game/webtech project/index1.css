@@ -1,418 +1,464 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
-* {
-    text-decoration: none;
-}
-
-body {
-    background-color: antiquewhite;
-    display: flex;
-    flex-wrap: wrap;
-    outline: none;
-    overflow-x: hidden;
-}
-
-.logo {
-    font-size: 25px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-
-.logo:hover {
-    color: rgb(2, 2, 93);
-}
-
-.login,
-.getStarted {
-    float: right;
-    margin-top: -40px;
-    font-size: 24px;
-}
-
-.login {
-    margin-right: 2rem;
-    margin-left: 1rem;
-    margin-top: 4px;
-    cursor: pointer;
-}
-
-.login:hover {
-    color: rgb(96, 154, 9);
-}
-
-.login:hover {
-    transition: 0.5s;
-    border: 1px solid green;
-    padding: 5px;
-    border-radius: 8px;
-}
-
-.fa-lock {
-    color: green;
-    margin-right: 10px;
-}
-
-.getStarted {
-    text-align: center;
-    background: none;
-    border: none;
-    margin-left: 35rem;
-    margin-top: 5px;
-    height: 40px;
-    width: 9rem;
-    background-color: rgb(2, 146, 2);
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
-}
-
-.getStarted:hover {
-    transform: scale(1.1);
-    transition: 1.5s;
-}
-
-.navBar {
-    background-color: white;
-    -webkit-box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.69);
-    box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.69);
-    outline: none;
-    justify-content: flex-start;
-    display: inline-flex;
-    align-items: stretch;
-    box-sizing: border-box;
-    position: fixed;
-    /* border: 1px solid black; */
-    margin-top: -8px;
-    margin-left: -8px;
-    width: 100%;
-    height: 50px;
-    z-index: 1;
-}
-
-a {
-    position: relative;
-    color: black;
-    font-weight: 70;
-    margin-left: 20px;
-    left: 10rem;
-    top: 1rem;
-}
-
-a:hover {
-    color: green;
-}
-
-.fa-caret-down {
-    margin-left: 5px;
-}
-
-.three {
-    color: green;
-}
-
-.create-account {
-    display: block;
-    position: absolute;
-    background-color: bisque;
-    box-shadow: -8px 12px 15px 1px rgba(0, 0, 0, 0.81);
-    top: 20rem;
-    left: 55rem;
-    width: 30rem;
-    height: 20rem;
-    border-radius: 10px;
-}
-
-input {
-    display: block;
-    border-radius: 10px;
-    border: none;
-    width: 28rem;
-    height: 40px;
-    font-size: 17px;
-    padding-left: 5px;
-    margin-left: 11px;
-    margin-top: 10px;
-    outline: none;
-}
-
-.submit {
-    font-size: 20px;
-    letter-spacing: 5px;
-    color: white;
-    margin-left: 2rem;
-    margin-top: 1.5rem;
-    padding: 15px 10rem 15px 10rem;
-    border: none;
-    background-color: rgb(13, 107, 6);
-    border-radius: 0 0 10px 10px;
-    -webkit-box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.81);
-    box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.81);
-    cursor: pointer;
-}
-
-.submit:hover {
-    background-color: black;
-}
-
-.loginSign {
-    /* display: none; */
-    display: block;
-    position: absolute;
-    background-color: bisque;
-    /* border: 1px solid black; */
-    box-shadow: -8px 12px 15px 1px rgba(0, 0, 0, 0.81);
-    top: 20rem;
-    left: 20rem;
-    width: 30rem;
-    height: 15rem;
-    border-radius: 10px;
-}
-
-.logButton {
-    font-size: 20px;
-    letter-spacing: 5px;
-    color: white;
-    margin-left: 2.6rem;
-    margin-top: 1.5rem;
-    padding: 15px 10rem 15px 10rem;
-    border: none;
-    background-color: rgb(13, 107, 6);
-    border-radius: 0 0 10px 10px;
-    -webkit-box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.81);
-    box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.81);
-    cursor: pointer;
-}
-
-.logButton:hover {
-    background-color: black;
-}
-
-.slideScroll {
-    position: relative;
-    display: inline-flex;
-    flex-grow: inherit;
-    top: 20rem;
-    margin-left: -8px;
-    margin-right: -10rem;
-}
-
-.imgBox {
-    box-sizing: border-box;
-    width: 72rem;
-    height: 47rem;
-    margin-left: 9rem;
-    border: 6px solid rgb(124, 255, 2);
-    border-radius: 20%;
-    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 15% 85%, 0% 85%);
-    background-color: green;
-}
-
-.img1,
-.img2,
-.img3,
-.img4,
-.img5,
-.img6,
-.img7 {
-    outline: none;
-    border-radius: 10px;
-    margin: 20px;
-    border: 2px solid greenyellow;
-    transition: 2s;
-    top: 8rem;
-}
-
-.img1:hover {
-    transform: scale(1.2);
-}
-
-.img2:hover {
-    transform: scale(1.2);
-}
-
-.img3:hover {
-    transform: scale(1.2);
-}
-
-.img4:hover {
-    transform: scale(1.2);
-}
-
-.img5:hover {
-    transform: scale(1.2);
-}
-
-.img6:hover {
-    transform: scale(1.2);
-}
-
-.img7:hover {
-    transform: scale(1.2);
-}
-
-.img5,
-.img6,
-.img7 {
-    left: 8rem;
-    position: relative;
-    margin-left: 3rem;
-}
-
-.img1,
-.img2,
-.img3,
-.img4 {
-    margin-left: 2.5rem;
-    position: relative;
-}
-
-.get-template,
-.explore {
-    text-align: center;
-    margin-left: 3rem;
-    top: 15rem;
-    left: 27rem;
-    font-size: 20px;
-    /* border: 1px solid black; */
-    padding: 25px;
-    border-radius: 8px;
-    background-color: green;
-    color: white;
-}
-
-.explore {
-    color: black;
-    background: none;
-}
-
-.explore:hover {
-    background-color: green;
-    color: white;
-}
-
-.get-template:hover {
-    background-color: rgb(127, 192, 28);
-}
-
-.presenting {
-    position: relative;
-    left: 26rem;
-    top: 12rem;
-}
-
-.title {
-    position: relative;
-    left: 23rem;
-    top: 11rem;
-    font-size: 45px;
-}
-
-.box-included {
-    /* border: 1px solid black; */
-    position: relative;
-    top: 23rem;
-    left: 19.5rem;
-    width: 50rem;
-    text-align: center;
-}
-
-.whatIs {
-    font-size: 40px;
-}
-
-.pagesThree {
-    /* border: 1px solid black; */
-    display: flex;
-    width: 85rem;
-    margin-left: 50px;
-    position: relative;
-    box-sizing: border-box;
-    top: 30rem;
-    /* overflow-x: hidden; */
-}
-
-.imgA,
-.imgA1 {
-    position: relative;
-    margin-left: 20px;
-    border: 2px solid greenyellow;
-    border-radius: 10px;
-    transition: 3s;
-    margin-left: -30px;
-    transition: 3s;
-}
-
-.imgA:hover {
-    transform: rotate(20deg);
-}
-
-.imgA1:hover {
-    transform: rotate(20deg);
-}
-
-.whatPara,
-.whatPara1,
-.whatPara2 {
-    position: relative;
-    display: flex;
-    top: 25rem;
-    left: -15rem;
-    font-size: 20px;
-}
-
-.imgA1 {
-    margin-top: -5rem;
-}
-
-.threeImg {
-    color: rgb(4, 177, 4);
-    font-size: 30px;
-    margin-right: 10px;
-}
-
-.figmaFile {
-    /* border: 1px solid black; */
-    position: relative;
-    top: 60rem;
-    width: 90rem;
-    display: block;
-    margin-bottom: 100rem;
-    left: 20px;
-}
-
-.nonsense {
-    float: right;
-    border-radius: 10px;
-    border: 2px solid greenyellow;
-}
-
-.secLogo {
-    margin-top: 40px;
-}
-
-.figmaIncluded {
-    font-size: 40px;
-}
-
-.figmaPara {
-    font-size: 30px;
-    font-weight: 40;
-    opacity: 0.5;
-}
-
-.requestFile {
-    font-size: 30px;
-    padding: 30px;
-    border-radius: 10px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: 2s;
-    margin-left: 20px;
-}
-
-.requestFile:hover {
-    transform: scale(1.1);
-    background-color: green;
-}
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+        * {
+            text-decoration: none;
+        }
+        
+        body {
+            background-color: antiquewhite;
+            display: flex;
+            flex-wrap: wrap;
+            outline: none;
+            overflow-x: hidden;
+        }
+        
+        .logo {
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        
+        .logo:hover {
+            color: rgb(2, 2, 93);
+        }
+        
+        .login,
+        .getStarted {
+            float: right;
+            margin-top: -40px;
+            font-size: 24px;
+        }
+        
+        .login {
+            margin-right: 2rem;
+            margin-left: 1rem;
+            margin-top: 4px;
+            cursor: pointer;
+        }
+        
+        .login:hover {
+            color: rgb(96, 154, 9);
+        }
+        
+        .login:hover {
+            transition: 0.5s;
+            border: 1px solid green;
+            padding: 5px;
+            border-radius: 8px;
+        }
+        
+        .fa-lock {
+            color: green;
+            margin-right: 10px;
+        }
+        
+        .getStarted {
+            text-align: center;
+            background: none;
+            border: none;
+            margin-left: 35rem;
+            margin-top: 5px;
+            height: 40px;
+            width: 9rem;
+            background-color: rgb(2, 146, 2);
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .getStarted:hover {
+            transform: scale(1.1);
+            transition: 1.5s;
+        }
+        
+        .navBar {
+            background-color: white;
+            -webkit-box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.69);
+            box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.69);
+            outline: none;
+            justify-content: flex-start;
+            display: inline-flex;
+            align-items: stretch;
+            box-sizing: border-box;
+            position: fixed;
+            /* border: 1px solid black; */
+            margin-top: -8px;
+            margin-left: -8px;
+            width: 100%;
+            height: 50px;
+            z-index: 1;
+        }
+        
+        .home {
+            position: relative;
+            color: black;
+            font-weight: 70;
+            margin-left: 20px;
+            left: 10rem;
+            top: 1rem;
+        }
+        
+        .home:hover {
+            color: green;
+        }
+        
+        .fa-caret-down {
+            margin-left: 5px;
+        }
+        
+        .three {
+            color: green;
+        }
+        
+        .create-account {
+            display: block;
+            position: absolute;
+            background-color: bisque;
+            box-shadow: -8px 12px 15px 1px rgba(0, 0, 0, 0.81);
+            top: 20rem;
+            left: 55rem;
+            width: 30rem;
+            height: 20rem;
+            border-radius: 10px;
+        }
+        
+        input {
+            display: block;
+            border-radius: 10px;
+            border: none;
+            width: 28rem;
+            height: 40px;
+            font-size: 17px;
+            padding-left: 5px;
+            margin-left: 11px;
+            margin-top: 10px;
+            outline: none;
+        }
+        
+        .submit {
+            font-size: 20px;
+            letter-spacing: 5px;
+            color: white;
+            margin-left: 2rem;
+            margin-top: 1.5rem;
+            padding: 15px 10rem 15px 10rem;
+            border: none;
+            background-color: rgb(13, 107, 6);
+            border-radius: 0 0 10px 10px;
+            -webkit-box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.81);
+            box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.81);
+            cursor: pointer;
+        }
+        
+        .submit:hover {
+            background-color: black;
+        }
+        
+        .loginSign {
+            /* display: none; */
+            display: block;
+            position: absolute;
+            background-color: bisque;
+            /* border: 1px solid black; */
+            box-shadow: -8px 12px 15px 1px rgba(0, 0, 0, 0.81);
+            top: 20rem;
+            left: 20rem;
+            width: 30rem;
+            height: 15rem;
+            border-radius: 10px;
+        }
+        
+        .logButton {
+            font-size: 20px;
+            letter-spacing: 5px;
+            color: white;
+            margin-left: 2.6rem;
+            margin-top: 1.5rem;
+            padding: 15px 10rem 15px 10rem;
+            border: none;
+            background-color: rgb(13, 107, 6);
+            border-radius: 0 0 10px 10px;
+            -webkit-box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.81);
+            box-shadow: -8px 12px 15px -4px rgba(0, 0, 0, 0.81);
+            cursor: pointer;
+        }
+        
+        .logButton:hover {
+            background-color: black;
+        }
+        
+        .slideScroll {
+            position: relative;
+            display: inline-flex;
+            flex-grow: inherit;
+            top: 20rem;
+            margin-left: -8px;
+            margin-right: -10rem;
+        }
+        
+        .imgBox {
+            box-sizing: border-box;
+            width: 72rem;
+            height: 47rem;
+            margin-left: 9rem;
+            border: 6px solid rgb(124, 255, 2);
+            border-radius: 20%;
+            clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 15% 85%, 0% 85%);
+            background-color: green;
+        }
+        
+        .img1,
+        .img2,
+        .img3,
+        .img4,
+        .img5,
+        .img6,
+        .img7 {
+            outline: none;
+            border-radius: 10px;
+            margin: 20px;
+            border: 2px solid greenyellow;
+            transition: 2s;
+            top: 8rem;
+        }
+        
+        .img1:hover {
+            transform: scale(1.2);
+        }
+        
+        .img2:hover {
+            transform: scale(1.2);
+        }
+        
+        .img3:hover {
+            transform: scale(1.2);
+        }
+        
+        .img4:hover {
+            transform: scale(1.2);
+        }
+        
+        .img5:hover {
+            transform: scale(1.2);
+        }
+        
+        .img6:hover {
+            transform: scale(1.2);
+        }
+        
+        .img7:hover {
+            transform: scale(1.2);
+        }
+        
+        .img5,
+        .img6,
+        .img7 {
+            left: 8rem;
+            position: relative;
+            margin-left: 3rem;
+        }
+        
+        .img1,
+        .img2,
+        .img3,
+        .img4 {
+            margin-left: 2.5rem;
+            position: relative;
+        }
+        
+        .get-template,
+        .explore {
+            text-align: center;
+            margin-left: 3rem;
+            top: 15rem;
+            left: 27rem;
+            font-size: 20px;
+            /* border: 1px solid black; */
+            padding: 25px;
+            border-radius: 8px;
+            background-color: green;
+            color: white;
+        }
+        
+        .explore {
+            color: black;
+            background: none;
+        }
+        
+        .explore:hover {
+            background-color: green;
+            color: white;
+        }
+        
+        .get-template:hover {
+            background-color: rgb(127, 192, 28);
+        }
+        
+        .presenting {
+            position: relative;
+            left: 26rem;
+            top: 12rem;
+        }
+        
+        .title {
+            position: relative;
+            left: 23rem;
+            top: 11rem;
+            font-size: 45px;
+        }
+        
+        .box-included {
+            /* border: 1px solid black; */
+            position: relative;
+            top: 23rem;
+            left: 19.5rem;
+            width: 50rem;
+            text-align: center;
+        }
+        
+        .whatIs {
+            font-size: 40px;
+        }
+        
+        .pagesThree {
+            /* border: 1px solid black; */
+            display: flex;
+            width: 85rem;
+            margin-left: 50px;
+            position: relative;
+            box-sizing: border-box;
+            top: 30rem;
+            /* overflow-x: hidden; */
+        }
+        
+        .imgA,
+        .imgA1 {
+            position: relative;
+            margin-left: 20px;
+            border: 2px solid greenyellow;
+            border-radius: 10px;
+            transition: 3s;
+            margin-left: -30px;
+            transition: 3s;
+        }
+        
+        .imgA:hover {
+            transform: rotate(20deg);
+        }
+        
+        .imgA1:hover {
+            transform: rotate(20deg);
+        }
+        
+        .whatPara,
+        .whatPara1,
+        .whatPara2 {
+            position: relative;
+            display: flex;
+            top: 25rem;
+            left: -15rem;
+            font-size: 20px;
+        }
+        
+        .imgA1 {
+            margin-top: -5rem;
+        }
+        
+        .threeImg {
+            color: rgb(4, 177, 4);
+            font-size: 30px;
+            margin-right: 10px;
+        }
+        
+        .figmaFile {
+            /* border: 1px solid black; */
+            position: relative;
+            top: 60rem;
+            width: 90rem;
+            display: block;
+            margin-bottom: 100rem;
+            left: 20px;
+        }
+        
+        .nonsense {
+            float: right;
+            border-radius: 10px;
+            border: 2px solid greenyellow;
+        }
+        
+        .secLogo {
+            margin-top: 40px;
+        }
+        
+        .figmaIncluded {
+            font-size: 40px;
+        }
+        
+        .figmaPara {
+            font-size: 30px;
+            font-weight: 40;
+            opacity: 0.5;
+        }
+        
+        .requestFile {
+            font-size: 30px;
+            padding: 30px;
+            border-radius: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition: 2s;
+            margin-left: 20px;
+        }
+        
+        .requestFile:hover {
+            transform: scale(1.1);
+            background-color: green;
+        }
+        
+        .main-pages {
+            position: relative;
+            overflow: hidden;
+            /* border: 1px solid black; */
+            height: 200rem;
+            width: 120rem;
+            margin-top: -20rem;
+            align-content: center;
+            box-sizing: border-box;
+        }
+        
+        .mainHeader {
+            text-align: center;
+        }
+        
+        .mainPages {
+            font-size: 40px;
+        }
+        
+        .main-content {
+            /* border: 1px solid black; */
+            display: table;
+            height: 300rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .mainImageBox {
+            display: table;
+            margin-left: 2rem;
+            /* border: 1px solid black; */
+            width: 90%;
+            text-align: center;
+        }
+        
+        .imgMain {
+            columns: 3;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10rem;
+            margin-left: 60px;
+            left: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
