@@ -32,14 +32,7 @@ logIn.onclick = () => {
 };
 
 //thill
-createAccount.addEventListener("create-account", (e) => {
-    e.preventDefault();
-    submit.addEventListener("submit", myFunction);
 
-    function myFunction() {
-        alert("the form was submitted!!")
-    }
-})
 
 // gsap.fromTo('.imgGrid', { x: 40, opacity: -0.5, duration: 4 }, { x: 20, opacity: 2, duration: 4 })
 
@@ -61,3 +54,22 @@ createAccount.addEventListener("create-account", (e) => {
 //         x: x => windowYoyo(parseFloat(x)) + "px"
 //     }
 // });
+let tl = gsap.timeline({ repeat: -1, repeatDelay: 1, yoyo: true })
+
+tl.to(".one", { rotation: 360 });
+tl.to(".two", { rotation: 360 });
+tl.to(".three", { rotation: 360 });
+tl.to(".four", { rotation: 360 });
+tl.to(".five", { rotation: 360 });
+tl.to(".six", { rotation: 360 });
+tl.to(".nine", { rotation: 360 });
+tl.to(".ten", { rotation: 360 });
+tl.to(".eleven", { rotation: 360 });
+tl.to(".twelve", { rotation: 360 });
+tl.to("therteen", { rotation: 360 });
+tl.to(".fourtin", { rotation: 360 });
+tl.to(".fifteen", { rotation: 360 });
+tl.to(".seventeen", { rotation: 360 });
+tl.to(".eighteen", { rotation: 360 });
+tl.to(" .twenteen", { rotation: 360 });
+tl.to(".twenteenone", { rotation: 360 });
