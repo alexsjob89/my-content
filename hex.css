@@ -1,17 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 body {
-    overflow-x: hidden;
-    background-color: black;
-    color: white;
-    font-family: "Signika Negative", Arial, sans-serif;
-    font-weight: 300;
+    background-color: #E7E9EB;
 }
 
-.ball {
-    width: 100px;
-    height: 100px;
-    background: dodgerblue;
-    border-radius: 50%;
-    margin: 10px 0;
-    will-change: transform;
+.ball2 {
+    background-image: url('animalimg/animalsback4.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50rem;
+    height: 50rem;
+    filter: blur(3px);
+}
+
+.ball1 {
+    z-index: 1;
+    border: 1px solid #ff0d0d;
+    position: relative;
+    top: 30rem;
+    left: 20rem;
+    background-color: #e20303;
+    width: 10rem;
+    height: 10rem;
+    filter: blur(15px);
 }

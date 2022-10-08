@@ -9,6 +9,8 @@ const submit = document.querySelector('#submit')
 const logButton = document.querySelector('#logButton')
 
 
+
+
 createAccount.style.display = 'none'
 
 getStarted.onclick = () => {
@@ -31,30 +33,8 @@ logIn.onclick = () => {
     }
 };
 
-//thill
 
-
-// gsap.fromTo('.imgGrid', { x: 40, opacity: -0.5, duration: 4 }, { x: 20, opacity: 2, duration: 4 })
-
-// gsap.defaults({ duration: 20, ease: 'none' });
-
-// let windowWrap = gsap.utils.wrap(0, window.innerWidth),
-//     windowYoyo = gsap.utils.wrapYoyo(0, window.innerWidth),
-
-//     gsap.to(".img1", {
-//         x: 10000,
-//         modifiers: {
-//             x: x => windowWrap(parseFloat(x)) + "px"
-//         }
-//     });
-
-// gsap.to(".img7", {
-//     x: 10000,
-//     modifiers: {
-//         x: x => windowYoyo(parseFloat(x)) + "px"
-//     }
-// });
-let tl = gsap.timeline({ repeat: -1, repeatDelay: 1, yoyo: true })
+let tl = gsap.timeline({ repeat: -1, yoyo: true })
 
 tl.to(".one", { rotation: 360 });
 tl.to(".two", { rotation: 360 });
@@ -73,3 +53,15 @@ tl.to(".seventeen", { rotation: 360 });
 tl.to(".eighteen", { rotation: 360 });
 tl.to(" .twenteen", { rotation: 360 });
 tl.to(".twenteenone", { rotation: 360 });
+
+// for homeV1
+// const homes = document.querySelectorAll("#homeV2", "#homeV3", "#homeV4", "#homeV5", "#homeV6")
+
+// const homeVs = document.querySelectorAll("#homeV2", "#homeV3", "#homeV4", "#homeV5", "#homeV6");
+
+
+gsap.fromTo(".homeV1", { y: 40, duration: 6 }, { y: 10, duration: 6 });
+gsap.fromTo(".homeV2", { y: 40, duration: 6 }, { y: 10, duration: 6 });
+gsap.fromTo(".homeV3", { y: 40, duration: 6 }, { y: 10, duration: 6 });
+gsap.fromTo(".homeV4", { y: -40, duration: 6 }, { y: 10, duration: 6 });
+gsap.fromTo(".homeV5", { y: -40, duration: 6 }, { y: 10, duration: 6 });

@@ -1,18 +1,4 @@
-gsap.defaults({ duration: 20, ease: "none" });
+// gsap.fromTo(".ball1", { x: -30, duration: 3 }, { x: 20, duration: 30 });
 
-let windowWrap = gsap.utils.wrap(0, window.innerWidth),
-    windowYoyo = gsap.utils.wrapYoyo(0, window.innerWidth);
-
-gsap.to([".img1", ".img2", "img3", ".img4", ".img5", ".img6", ".img7", ] {
-    x: 10000,
-    modifiers: {
-        x: x => windowWrap(parseFloat(x)) + "px"
-    }
-});
-
-gsap.to([".img1", ".img2", "img3", ".img4", ".img5", ".img6", ".img7"], {
-    x: 10000,
-    modifiers: {
-        x: x => windowYoyo(parseFloat(x)) + "px"
-    }
-});
+const tl = gsap.timeline();
+tl.fromTo(".ball1", { x: 100, duration: 3, }, { x: -100, duration: 3 });
