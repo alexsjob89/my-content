@@ -1,25 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 body {
-    background-color: #E7E9EB;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
-.ball2 {
-    background-image: url('animalimg/animalsback4.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50rem;
-    height: 50rem;
-    filter: blur(3px);
+.box-content {
+    box-sizing: flex;
+    width: 80rem;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 10rem;
 }
 
-.ball1 {
-    z-index: 1;
-    border: 1px solid #ff0d0d;
-    position: relative;
-    top: 30rem;
-    left: 20rem;
-    background-color: #e20303;
-    width: 10rem;
-    height: 10rem;
-    filter: blur(15px);
+.box {
+    /* border: 1px solid black;
+    width: 20rem;
+    display: grid;
+    columns: 3;
+    margin-left: 20rem; */
 }
