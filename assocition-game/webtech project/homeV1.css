@@ -420,11 +420,38 @@ input {
     overflow-y: hidden;
     animation: infinite;
     transition: 4s;
+    /* border: 1px solid black; */
+    padding: 10px;
 }
 
 .Btn1,
 .Btn2 {
     position: relative;
-    margin-top: -200rem;
+    margin-top: -180rem;
     font-size: 30px;
+    left: 40rem;
+    top: 3rem;
+    margin-bottom: 20rem;
+    margin-left: 20px;
+    padding: 1.5rem;
+    border-radius: 15px;
+    background-color: greenyellow;
+    color: rgb(54, 51, 48);
+    border: none;
+    cursor: pointer;
+    box-shadow: 12px 10px 17px 1px #000000;
+    transition: 3s;
+    overflow: hidden;
+}
+
+.Btn2:hover {
+    background-color: white;
+    border: 2px solid rgb(80, 80, 80);
+    transition: 3s;
+}
+
+.Btn1:hover {
+    background-color: white;
+    border: 2px solid rgb(80, 80, 80);
+    transition: 2s;
 }
