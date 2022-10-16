@@ -1,10 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
-body {
-    /* background-color: black; */
+
+/* navBar */
+
+.navBar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
     margin: 0;
-    padding: 0;
+    outline: none;
+    width: 100%;
+    overflow: hidden;
+    margin-left: -5px;
+    padding: 0px;
+    margin-right: -20px;
+    margin-top: -5px;
+    height: 60px;
+}
+
+.logo {
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+    left: 10px;
     font-family: sans-serif;
-    /* background-clip: border-box; */
+}
+
+.features,
+.homeUs,
+.cards,
+.FAQ,
+.contactUs {
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    top: 15px;
+    left: 10rem;
+    margin-left: 3rem;
+    text-decoration: none;
+    color: black;
+    font-style: oblique;
+}
+
+.features:hover {
+    color: red;
+    text-transform: uppercase;
+}
+
+.homeUs:hover {
+    color: red;
+    text-transform: uppercase;
+}
+
+.cards:hover {
+    color: red;
+    text-transform: uppercase;
+}
+
+.FAQ:hover {
+    color: red;
+    text-transform: uppercase;
+}
+
+.contactUs:hover {
+    color: red;
+    text-transform: uppercase;
+}
+
+.getCard {
+    position: absolute;
+    left: 70rem;
+    top: 5px;
+    font-size: 20px;
+    /* border: 1px solid black; */
+    padding: 13px;
+    border-bottom-right-radius: 17px;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgb(220, 220, 220);
+}
+
+.getCard:hover {
+    color: blue;
+    border: 1px solid blue;
+}
+
+
+/* cards  */
+
+.getPersonalCard {
+    border: 1px solid black;
+    position: relative;
+    top: 4rem;
+}
+
+.cardsSection {
+    position: relative;
+    top: -28rem;
+    right: -20rem;
 }
 
 .imagesCards {
