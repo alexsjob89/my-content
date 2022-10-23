@@ -1,388 +1,708 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
-:root {
-    --gradient: linear-gradient( 45deg, #845ec2, #66c25e, #5eb3c2, #c25ebf, #bfc25e);
-}
-
-.detailBox {
-    position: relative;
-    top: 8rem;
-    display: block;
-}
-
-.poket,
-.title,
-.poketInfo {
-    position: relative;
-    left: 10rem;
-    top: 5rem;
-}
-
-.poketBox {
-    position: relative;
-    margin-left: 11rem;
-    left: -1.5rem;
-    top: 3rem;
-    width: 13rem;
-    height: 45px;
-    background-image: var(--gradient);
-    background-clip: text;
-    z-index: 0;
-}
-
-.poket {
-    position: relative;
-    margin-top: -2rem;
-    width: 23rem;
-    left: -2rem;
-    top: 1rem;
-    padding-top: 40px;
-    padding-left: 40px;
-    font-weight: 900;
-    font-size: 30px;
-    height: 70px;
-    background-color: white;
-    background-image: var(--gradient);
-    background-clip: text;
-    color: transparent;
-    z-index: 1;
-}
-
-.title {
-    font-size: 50px;
-    font-family: sans-serif;
-    font-weight: 500;
-}
-
-.poketInfo {
-    font-size: 20px;
-    line-height: 35px;
-}
-
-.Hero {
-    position: absolute;
-    margin-top: 15rem;
-    overflow: auto;
-    height: 17rem;
-    left: 2rem;
-}
-
-.learnMore {
-    position: absolute;
-    top: 38rem;
-    left: 10rem;
-    font-size: 20px;
-    padding: 20px;
-    width: 12rem;
-    border-radius: 18px;
-    background: none;
-    border: none;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-}
-
-.learnMore:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    transition: 1.5s;
-}
-
-
-/* navBar */
-
-.navBar {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    /* border: 1px solid black; */
-    margin: 0;
-    outline: none;
-    width: 100%;
-    overflow: hidden;
-    margin-left: -5px;
-    padding: 0px;
-    margin-right: -20px;
-    margin-top: -5px;
-    height: 60px;
-}
-
-.logo {
-    font-size: 30px;
-    position: relative;
-    top: 10px;
-    left: 10px;
-    font-family: sans-serif;
-}
-
-.features,
-.homeUs,
-.cards,
-.FAQ,
-.contactUs {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 25px;
-    top: 15px;
-    left: 10rem;
-    margin-left: 3rem;
-    text-decoration: none;
-    color: black;
-    font-style: oblique;
-    cursor: pointer;
-}
-
-.features:hover {
-    color: red;
-}
-
-.homeUs:hover {
-    color: red;
-}
-
-.cards:hover {
-    color: red;
-}
-
-.FAQ:hover {
-    color: red;
-}
-
-.contactUs:hover {
-    color: red;
-}
-
-.getCard {
-    position: absolute;
-    left: 70rem;
-    top: 5px;
-    font-size: 20px;
-    /* border: 1px solid black; */
-    padding: 13px;
-    border-bottom-right-radius: 17px;
-    border-top-left-radius: 17px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    background-color: rgb(220, 220, 220);
-}
-
-.getCard:hover {
-    color: blue;
-    border: 1px solid blue;
-}
-
-
-/* cards  */
-
-.getPersonalCard {
-    /* border: 1px solid black; */
-    position: relative;
-    top: 4rem;
-}
-
-.cardsSection {
-    position: relative;
-    top: -28rem;
-    right: -10rem;
-}
-
-.imagesCards {
-    border: 2px solid rgba(255, 255, 255, 0.58);
-    background: none;
-    position: absolute;
-    top: 20rem;
-    left: 40rem;
-    width: 25rem;
-    height: 13rem;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.68);
-    z-index: 2;
-    /* background-color: white; */
-    /* opacity: 0.8;       */
-}
-
-.background {
-    border: 2px solid rgb(255, 255, 255);
-    position: absolute;
-    top: 20rem;
-    left: 40rem;
-    width: 25rem;
-    height: 13rem;
-    border-radius: 15px;
-    overflow: hidden;
-    background-color: white;
-    box-shadow: 0px 0px 23px -16px rgba(252, 252, 252, 0.63);
-    /* filter: blur(10px); */
-    opacity: 0.6;
-    z-index: 1;
-}
-
-.fa-wifi {
-    position: relative;
-    left: 22rem;
-    top: 1rem;
-    transform: rotate(90deg);
-    z-index: 2;
-}
-
-.cardNr {
-    position: relative;
-    left: 4rem;
-    top: 4rem;
-    font-size: 30px;
-    /* border: 1px solid black; */
-    margin-right: 6rem;
-    font-family: 'Roboto', sans-serif;
-    color: rgb(235, 235, 235);
-    z-index: 2;
-}
-
-.maestroLogo {
-    position: absolute;
-    float: left;
-    top: 5px;
-    left: 5px;
-    border-radius: 50%;
-    z-index: 2;
-}
-
-.name,
-.expire {
-    position: relative;
-    left: 19rem;
-    top: 6rem;
-    display: flex;
-    z-index: 3;
-}
-
-.gackgroundCard {
-    position: relative;
-    background-color: red;
-    width: 24rem;
-    height: 30rem;
-    left: 50rem;
-    top: 15rem;
-    z-index: 0;
-    box-shadow: 6px 33px 31px 4px #A5A5A5;
-    border-radius: 20px;
-    opacity: 0.7;
-}
-
-.universal {
-    font-size: 50px;
-    text-shadow: 0px 0px 5px #FFFFFF;
-    color: rgb(202, 1, 1);
-    position: relative;
-    left: 20px;
-    top: 20px;
-}
-
-.one {
-    background-color: #ffffff;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-top: 20px;
-    margin-right: 20px;
-}
-
-.two {
-    background-color: #ffffff;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.tree {
-    background-color: #03972f;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin-left: -15px;
-    margin-bottom: -80px;
-}
-
-.four {
-    background-color: #f4e407;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-top: -100px;
-    margin-right: -40px;
-}
-
-.five {
-    background-color: red;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin-left: -40px;
-    margin-bottom: -40px;
-}
-
-.six {
-    background-color: red;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-top: -20px;
-    margin-right: -20px;
-}
-
-.seven {
-    background-color: #f4e407;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin-left: -85px;
-    margin-bottom: -20px;
-}
-
-.eight {
-    background-color: red;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin-left: -100px;
-    margin-bottom: -100px;
-}
-
-.nine {
-    background-color: #03972f;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-top: -50px;
-    margin-right: -65px;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+     :root {
+        --gradient: linear-gradient( 45deg, #845ec2, #66c25e, #5eb3c2, #c25ebf, #bfc25e);
+    }
+    
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+    
+    .detailBox {
+        position: relative;
+        top: 8rem;
+        display: block;
+    }
+    
+    .poket,
+    .title,
+    .poketInfo {
+        position: relative;
+        left: 10rem;
+        top: 5rem;
+    }
+    
+    .poketBox {
+        position: relative;
+        margin-left: 11rem;
+        left: -1.5rem;
+        top: 3rem;
+        width: 13rem;
+        height: 45px;
+        background-image: var(--gradient);
+        background-clip: text;
+        z-index: 0;
+    }
+    
+    .poket {
+        position: relative;
+        margin-top: -2rem;
+        width: 23rem;
+        left: -2rem;
+        top: 1rem;
+        padding-top: 40px;
+        padding-left: 40px;
+        font-weight: 900;
+        font-size: 30px;
+        height: 70px;
+        background-color: white;
+        background-image: var(--gradient);
+        background-clip: text;
+        color: transparent;
+        z-index: 1;
+    }
+    
+    .title {
+        font-size: 50px;
+        font-family: sans-serif;
+        font-weight: 500;
+    }
+    
+    .poketInfo {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    
+    .Hero {
+        position: absolute;
+        margin-top: 15rem;
+        overflow: auto;
+        height: 17rem;
+        left: 2rem;
+    }
+    
+    .learnMore {
+        position: absolute;
+        top: 38rem;
+        left: 10rem;
+        font-size: 20px;
+        padding: 20px;
+        width: 12rem;
+        border-radius: 18px;
+        background: none;
+        border: none;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .learnMore:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        transition: 1.5s;
+    }
+    /* navBar */
+    
+    .sticky {
+        transition: 3s;
+        position: fixed;
+        top: 100px;
+        width: 100%;
+    }
+    
+    .sticky+.content {
+        padding-top: 60px;
+    }
+    
+    .navBar {
+        position: relative;
+        display: flex;
+        /* border: 1px solid black; */
+        margin: 0;
+        outline: none;
+        width: 100%;
+        /* overflow: hidden; */
+        margin-left: -5px;
+        padding: 0px;
+        margin-right: -20px;
+        margin-top: -5px;
+        height: 60px;
+    }
+    
+    .logo {
+        font-size: 30px;
+        position: relative;
+        top: 10px;
+        left: 10px;
+        font-family: sans-serif;
+        border-bottom-right-radius: 15px;
+    }
+    
+    .features,
+    .homeUs,
+    .cards,
+    .FAQ,
+    .contactUs {
+        /* border: 1px solid black; */
+        height: 2rem;
+        padding: 4px;
+        position: relative;
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        font-size: 20px;
+        top: 15px;
+        left: 10rem;
+        margin-left: 3rem;
+        text-decoration: none;
+        color: black;
+        /* font-style: oblique; */
+        cursor: pointer;
+    }
+    
+    .link:hover {
+        color: red;
+    }
+    
+    .getCard {
+        margin-left: 40rem;
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+        padding-top: 15px;
+        width: 8rem;
+        /* border: 1px solid black; */
+        border-bottom-right-radius: 17px;
+        border-top-left-radius: 17px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-color: rgb(220, 220, 220);
+    }
+    
+    .getCard:hover {
+        color: blue;
+    }
+    /* cards  */
+    
+    .getPersonalCard {
+        /* border: 1px solid black; */
+        position: relative;
+        top: 4rem;
+    }
+    
+    .cardsSection {
+        position: relative;
+        top: -28rem;
+        right: -10rem;
+    }
+    
+    .imagesCards {
+        border: 2px solid rgba(255, 255, 255, 0.58);
+        background: none;
+        position: absolute;
+        top: 20rem;
+        left: 40rem;
+        width: 25rem;
+        height: 13rem;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.68);
+        z-index: 2;
+        /* background-color: white; */
+        /* opacity: 0.8;       */
+    }
+    
+    .background {
+        border: 2px solid rgb(255, 255, 255);
+        position: absolute;
+        top: 20rem;
+        left: 40rem;
+        width: 25rem;
+        height: 13rem;
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: white;
+        box-shadow: 0px 0px 23px -16px rgba(252, 252, 252, 0.63);
+        /* filter: blur(10px); */
+        opacity: 0.6;
+        z-index: 1;
+    }
+    
+    .fa-wifi {
+        position: relative;
+        left: 22rem;
+        top: 1rem;
+        transform: rotate(90deg);
+        z-index: 2;
+    }
+    
+    .cardNr {
+        position: relative;
+        left: 4rem;
+        top: 4rem;
+        font-size: 30px;
+        /* border: 1px solid black; */
+        margin-right: 6rem;
+        font-family: 'Roboto', sans-serif;
+        color: rgb(235, 235, 235);
+        z-index: 2;
+    }
+    
+    .maestroLogo {
+        position: absolute;
+        float: left;
+        top: 5px;
+        left: 5px;
+        border-radius: 50%;
+        z-index: 2;
+    }
+    
+    .name,
+    .expire {
+        position: relative;
+        left: 19rem;
+        top: 6rem;
+        display: flex;
+        z-index: 3;
+    }
+    
+    .gackgroundCard {
+        position: relative;
+        background-color: red;
+        width: 24rem;
+        height: 30rem;
+        left: 50rem;
+        top: 15rem;
+        z-index: 0;
+        box-shadow: 6px 33px 31px 4px #A5A5A5;
+        border-radius: 20px;
+        opacity: 0.7;
+    }
+    
+    .universal {
+        font-size: 50px;
+        text-shadow: 0px 0px 5px #FFFFFF;
+        color: rgb(202, 1, 1);
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+    
+    .one {
+        background-color: #ffffff;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    
+    .two {
+        background-color: #ffffff;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .tree {
+        background-color: #03972f;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-left: -15px;
+        margin-bottom: -80px;
+    }
+    
+    .four {
+        background-color: #f4e407;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: -100px;
+        margin-right: -40px;
+    }
+    
+    .five {
+        background-color: red;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-left: -40px;
+        margin-bottom: -40px;
+    }
+    
+    .six {
+        background-color: red;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: -20px;
+        margin-right: -20px;
+    }
+    
+    .seven {
+        background-color: #f4e407;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-left: -85px;
+        margin-bottom: -20px;
+    }
+    
+    .eight {
+        background-color: red;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-left: -100px;
+        margin-bottom: -100px;
+    }
+    
+    .nine {
+        background-color: #03972f;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: -50px;
+        margin-right: -65px;
+    }
+    /* spunsor section */
+    
+    .sponsors {
+        margin-top: 6rem;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 4rem;
+        opacity: 0.5;
+    }
+    
+    .sponsorTitle {
+        position: relative;
+        left: 45rem;
+        top: 4rem;
+        font-size: 30px;
+        text-decoration: underline;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* features section */
+    
+    .featuresFea {
+        position: absolute;
+        /* border: 1px solid black; */
+        width: 85rem;
+        height: 55rem;
+        margin-top: 32rem;
+        margin-left: 10rem;
+    }
+    
+    .featuresBox {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-top: 5rem;
+    }
+    
+    .feaBox {
+        display: block;
+        /* align-items: flex-start; */
+        position: relative;
+        left: 1rem;
+        margin: 3rem;
+    }
+    
+    .titleFea {
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        text-decoration: underline;
+    }
+    /* about section */
+    
+    .aboutContent {
+        background: rgb(41, 40, 40);
+        box-shadow: 0px 13px 23px 4px rgba(0, 0, 0, 0.89);
+        position: absolute;
+        border: 1px solid black;
+        display: block;
+        top: 160rem;
+        left: 8rem;
+        width: 90rem;
+        height: 40rem;
+        margin-bottom: 20rem;
+        border-radius: 30px;
+        margin-bottom: 200rem;
+    }
+    
+    .boxContent {
+        border: 1px solid black;
+        height: 30rem;
+        margin-top: -2.9rem;
+        width: 40rem;
+        float: right;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    /* round elements */
+    
+    .backgroundBox {
+        display: flex;
+        border: 1px solid black;
+        background: grey;
+        width: 100%;
+        height: 60px;
+        border-top-left-radius: 30px;
+    }
+    
+    .round {
+        position: relative;
+        margin-top: 20px;
+        margin-left: 10px;
+        left: 5px;
+        /* border: 1px solid black; */
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+    
+    .round1 {
+        background: red;
+    }
+    
+    .round2 {
+        background: yellow;
+    }
+    
+    .round3 {
+        background: green;
+    }
+    /* box elements */
+    
+    .boxElements {
+        border: 1px solid black;
+        width: 12rem;
+        height: 26rem;
+        border-bottom-left-radius: 30px;
+        background: rgb(49, 49, 49);
+        box-shadow: 0px 13px 23px 4px rgba(0, 0, 0, 0.89);
+    }
+    
+    .element1 {
+        /* border: 1px solid black; */
+        height: 10px;
+        width: 5rem;
+        background: grey;
+        border-radius: 10px;
+    }
+    
+    .element2 {
+        /* border: 1px solid black; */
+        height: 10px;
+        width: 6rem;
+        background: grey;
+        border-radius: 10px;
+    }
+    
+    .element3 {
+        /* border: 1px solid black; */
+        height: 10px;
+        width: 3rem;
+        background: grey;
+        border-radius: 10px;
+    }
+    
+    .element4 {
+        /* border: 1px solid black; */
+        height: 10px;
+        width: 8rem;
+        background: grey;
+        border-radius: 10px;
+    }
+    
+    .element5 {
+        /* border: 1px solid black; */
+        height: 10px;
+        width: 5rem;
+        background: grey;
+        border-radius: 10px;
+    }
+    
+    .element6 {
+        /* border: 1px solid black; */
+        height: 10px;
+        width: 6rem;
+        background: grey;
+        border-radius: 10px;
+    }
+    
+    .elemt {
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    /* circle about box */
+    
+    .circleAbout {
+        position: absolute;
+        border: 1px solid black;
+        position: absolute;
+        left: 62rem;
+        top: 9.1rem;
+        margin-right: -10px;
+        width: 27.9rem;
+        height: 26.1rem;
+        background: rgb(61, 58, 58);
+        box-shadow: 0px 13px 23px 4px rgba(0, 0, 0, 0.89);
+    }
+    
+    .imgCircle {
+        opacity: 0.7;
+        margin-left: 4.5rem;
+        margin-top: 4.5rem;
+        box-shadow: 0px 13px 23px 4px rgba(0, 0, 0, 0.89);
+        border-radius: 50%;
+    }
+    
+    .imgCircle:hover {
+        transition: 1s ease-in-out;
+        transform: scale(1.1);
+    }
+    /* text inside of the box */
+    
+    .aboutBox {
+        background: rgb(41, 40, 40);
+        position: absolute;
+        display: grid;
+        grid-template-columns: auto auto;
+        /* border: 1px solid black; */
+        row-gap: 50px;
+        justify-items: center;
+        top: 7rem;
+        left: 2rem;
+        width: 40rem;
+        height: 25rem;
+    }
+    
+    .pro1,
+    .pro2,
+    .pro3,
+    .pro4 {
+        font-family: sans-serif;
+        display: table-column;
+        text-align: start;
+        /* border: 1px solid black; */
+        width: 20rem;
+        font-size: 50px;
+        justify-items: center;
+        padding-top: 4rem;
+        color: white;
+    }
+    
+    .fa-solid {
+        color: rgb(15, 15, 179, 0.5);
+        margin-left: 10px;
+        font-weight: 100;
+    }
+    
+    .fa-regular {
+        color: rgb(255, 0, 0, 0.5);
+        margin-left: 10px;
+        font-weight: 100;
+    }
+    
+    .text1 {
+        font-size: 20px;
+    }
+    
+    .AboutTitle {
+        color: white;
+        margin-left: 2rem;
+        font-size: 40px;
+        margin-top: 3.2rem;
+        width: fit-content;
+        height: fit-content;
+    }
+    /* online banking section */
+    
+    .onlineBank {
+        /* border: 1px solid black; */
+        display: block;
+        width: 80rem;
+        top: 220rem;
+        left: 10rem;
+        position: absolute;
+        float: bottom;
+        justify-content: start;
+    }
+    
+    .bankOptions {
+        display: block;
+        /* border: 1px solid black; */
+        position: absolute;
+        top: 10rem;
+        right: 0;
+        margin-right: 5rem;
+        width: 35rem;
+        height: 20rem;
+    }
+    
+    .bankTitle {
+        margin-top: -5px;
+        font-family: sans-serif;
+        font-weight: 500;
+        font-size: 35px;
+    }
+    
+    ul {
+        margin-top: -5px;
+        font-family: sans-serif;
+        position: relative;
+        margin-left: -15px;
+        line-height: 38px;
+    }
+    
+    .listLogo {
+        padding-right: 10px;
+        padding-left: -20px;
+        margin-left: -20px;
+    }
+    
+    .appStore,
+    .googlePlay {
+        position: relative;
+        text-decoration: none;
+        left: 4.4rem;
+        top: -1rem;
+        /* border: 1px solid black; */
+        padding: 15px;
+        margin-left: 15px;
+        border-radius: 10px;
+        background: var(--gradient);
+        color: white;
+        border: none;
+    }
+    
+    .appStore {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
