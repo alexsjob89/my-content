@@ -9,3 +9,27 @@ body {
     top: 4rem;
     left: 10rem;
 }
+
+.bgImg {
+    position: fixed;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 10rem;
+    height: 10rem;
+    left: 30rem;
+    margin-top: 40rem;
+    z-index: 2;
+    filter: blur(100);
+}
+
+.bgTwo {
+    position: fixed;
+    border: 1px solid white;
+    background: none;
+    width: 10rem;
+    height: 10rem;
+    left: 30rem;
+    margin-top: 40rem;
+    z-index: 3;
+    box-shadow: 3px 6px 6px 5px rgba(0, 0, 0, 0.15);
+}
