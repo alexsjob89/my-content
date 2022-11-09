@@ -13,3 +13,20 @@ gsap.fromTo("#tree", { x: -210, duration: 1 }, { x: 0, duration: 1 })
 gsap.fromTo("#four", { x: 210, duration: 1 }, { x: 0, duration: 1 })
 gsap.fromTo("#five", { scale: 0.7, duration: 5, opacity: 0 }, { scale: 1, opacity: 1, duration: 2 })
 gsap.fromTo("#six", { y: 2, scale: 0, flip: 20 }, { x: 20, duration: 8, scale: 1.2 })
+
+gsap.fromTo(".titlePro", { y: -120, opacity: 0 }, { y: 0, duration: 2, opacity: 1 }) ;
+gsap.fromTo(".paraPro ", { y: 120, opacity: 0 }, { y: 0, duration: 2, opacity: 1 }) ;
+
+// why section
+
+const homeContent = document.querySelectorAll(".home-content");
+const connectWay = document.querySelectorAll(".connectWay");
+
+const slideLeft = document.querySelector(".left");
+const slideRight = document.querySelector(".right");
+
+function slideLeft() {
+    document.addEventListener("onclick") {
+
+    }
+}

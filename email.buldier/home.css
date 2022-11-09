@@ -28,6 +28,7 @@ HTML {
     align-items: center;
     -webkit-box-shadow: 1px 3px 20px 3px rgba(0, 0, 0, 0.38);
     box-shadow: 1px 3px 20px 3px rgba(0, 0, 0, 0.38);
+    z-index: 2;
 }
 
 .navButtons {
@@ -84,6 +85,10 @@ a:hover {
     background-color: #5eb3c2;
     width: 100%;
     height: 40rem;
+}
+
+.home-content {
+    display: none;
 }
 
 #one {
@@ -150,4 +155,261 @@ a:hover {
     left: 12rem;
     color: white;
     z-index: 2;
+}
+
+.discoBox {
+    position: absolute;
+    display: block;
+    /* border: 1px solid black; */
+    right: 20rem;
+    top: 10rem;
+    height: 20rem;
+    width: 30rem;
+    /* overflow: hidden; */
+}
+
+.titlePro {
+    position: relative;
+    font-size: 40px;
+    color: white;
+}
+
+.par {
+    font-family: sans-serif;
+}
+
+.paraPro {
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+}
+
+.disBtn {
+    position: absolute;
+    font-size: 24px;
+    padding: 15px;
+    bottom: 0;
+    border-radius: 10px;
+    background: none;
+    background-color: white;
+    border: none;
+    color: #5eb3c2;
+}
+
+.disBtn:hover {
+    background-color: #a0df62;
+    transform: scale(1.1);
+    transition: 1.3s;
+}
+
+
+/* easiest way section */
+
+.easiestWay {
+    position: absolute;
+    border: 1px solid black;
+    width: 100%;
+    height: 1000%;
+}
+
+.connectWay {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    display: block;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    width: 35rem;
+    height: 35rem;
+    left: 60rem;
+    top: 3rem;
+}
+
+.con1 {
+    position: absolute;
+    top: 10rem;
+    left: 9rem;
+}
+
+.con2 {
+    position: absolute;
+    top: 3rem;
+    left: 14rem;
+}
+
+.con3 {
+    top: 12rem;
+    right: 24rem;
+    position: absolute;
+}
+
+.con4 {
+    right: 2rem;
+    bottom: 11rem;
+    position: absolute;
+}
+
+.con5 {
+    right: 4rem;
+    top: 22rem;
+    position: absolute;
+}
+
+.con6 {
+    bottom: 3.5rem;
+    left: 11rem;
+    position: absolute;
+}
+
+.con7 {
+    left: 27rem;
+    top: 12rem;
+    position: absolute;
+}
+
+.con8 {
+    bottom: 4rem;
+    left: 19rem;
+    position: absolute;
+}
+
+.con9 {
+    top: 6rem;
+    left: 7rem;
+    position: absolute;
+}
+
+.con10 {
+    top: 7rem;
+    right: 6rem;
+    position: absolute;
+}
+
+.con11 {
+    top: 20rem;
+    left: 4rem;
+    position: absolute;
+}
+
+
+/* easi Title */
+
+.titlePara {
+    position: absolute;
+    /* border: 1px solid black; */
+    width: 40rem;
+    top: 10rem;
+    height: 20rem;
+    left: 10rem;
+}
+
+.easiTitle {
+    color: white;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.easiPara {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.tryIt {
+    position: relative;
+    font-size: 15px;
+    background: none;
+    border: none;
+    background-color: white;
+    border-radius: 6px;
+    padding: 10px 20px 10px 20px;
+    top: 25rem;
+    left: 10.2rem;
+}
+
+.tryIt:hover {
+    background-color: #a0df62;
+    transform: scale(1.1);
+    transition: 1.3s;
+}
+
+.left,
+.right {
+    position: relative;
+    top: 35rem;
+    left: 50rem;
+    font-size: 20px;
+    border: 2px solid rgb(6, 6, 6, 0.4);
+    margin-left: 10px;
+    background: none;
+    background-color: rgba(45, 233, 250, 0.3);
+    color: rgb(0, 0, 0, 0.3);
+}
+
+.left {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.right {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+
+/* section why */
+
+.whyChose {
+    position: absolute;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    top: 45rem;
+    height: 40rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.why-content {
+    position: relative;
+    top: 7rem;
+}
+
+.whyTitle {
+    position: relative;
+    text-decoration: underline;
+    line-height: 40px;
+    left: 38rem;
+    display: table;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wChoose {
+    padding-left: 8rem;
+}
+
+.fa-star {
+    position: relative;
+    left: 52rem;
+    margin-top: 20px;
+    color: #5eb3c2;
+}
+
+.lineLeft {
+    position: relative;
+    background-color: #5eb3c2;
+    width: 4rem;
+    height: 2px;
+    left: 47.8rem;
+    bottom: 12px;
+}
+
+.lineRight {
+    position: relative;
+    background-color: #5eb3c2;
+    width: 4rem;
+    height: 2px;
+    left: 53.3rem;
+    bottom: 14px;
 }
