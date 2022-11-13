@@ -10,8 +10,29 @@ body {
     left: 10rem;
 }
 
-#demo {
-    font-size: 40px;
-    padding: 20px;
-    transition: 2s;
+.content {
+    display: flex;
+}
+
+.dragContent {
+    border: 1px solid black;
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.imgDrag {
+    box-shadow: 0px 0px 25px 3px #000000;
+}
+
+.drop {
+    display: flex;
+}
+
+.droptarget {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+    margin-top: 50px;
 }
