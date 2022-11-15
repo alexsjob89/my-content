@@ -70,40 +70,72 @@
 // document.getElementById("demo").innerHTML = text;
 
 
-document.addEventListener("dragstart", function(event) {
-    event.dataTransfer.setData("Img", event.target.id);
-});
+// document.addEventListener("dragstart", function(event) {
+//     event.dataTransfer.setData("Img", event.target.id);
+// });
 
 /* Events fired on the drop target */
-document.addEventListener("dragenter", function(event) {
-    if (event.target.className == "droptarget") {
-        document.getElementById("demo");
-        event.target.style.backgroundColor = "grey";
-    }
-});
+// document.addEventListener("dragenter", function(event) {
+//     if (event.target.className == "droptarget") {
+//         document.getElementById("demo");
+//         event.target.style.backgroundColor = "grey";
+//     }
+// });
 
-document.addEventListener("dragover", function(event) {
-    event.preventDefault();
-});
+// document.addEventListener("dragover", function(event) {
+//     event.preventDefault();
+// });
 
-/* Events fired on the drop target */
-document.addEventListener("dragleave", function(event) {
-    if (event.target.className == "droptarget") {
-        document.getElementById("demo").innerHTML = "Left the dropzone";
-        event.target.style.backgroundColor = "";
-    }
-});
+// /* Events fired on the drop target */
+// document.addEventListener("dragleave", function(event) {
+//     if (event.target.className == "droptarget") {
+//         document.getElementById("demo").innerHTML = "Left the dropzone";
+//         event.target.style.backgroundColor = "";
+//     }
+// });
 
-document.addEventListener("drop", function(event) {
-    event.preventDefault();
-    if (event.target.className == "droptarget") {
-        event.target.style.backgroundColor = "";
-        var data = event.dataTransfer.getData("Img");
-        event.target.appendChild(document.getElementById(data));
-    }
-});
+// document.addEventListener("drop", function(event) {
+//     event.preventDefault();
+//     if (event.target.className == "droptarget") {
+//         event.target.style.backgroundColor = "";
+//         var data = event.dataTransfer.getData("Img");
+//         event.target.appendChild(document.getElementById(data));
+//     }
+// });
 
-document.addEventListener("dragend", function(event) {
-    document.getElementById("demo");
-    event.target.style.opacity = "1";
-});
+// document.addEventListener("dragend", function(event) {
+//     document.getElementById("demo");
+//     event.target.style.opacity = "1";
+// });
+
+// document.getElementById("myInput").addEventListener("invalid", myFunction);
+
+// function myFunction() {
+//     alert("You must fill out the form!");
+// }
+
+
+// var i = 0;
+
+// function move() {
+//     if (i == 0) {
+//         i = 0;
+//         var elem = document.getElementById("myBar");
+//         var width = 0;
+//         var id = setInterval(frame, 20);
+
+//         function frame() {
+//             if (width >= 100) {
+//                 clearInterval(id);
+//                 i = 0;
+//             } else {
+//                 width++;
+//                 elem.style.width = width + "%";
+//                 elem.style.border = "10%";
+//                 elem.style.borderColor = "darkgreen";
+//                 elem.style.borderRadius = "0 8px 8px 0"
+//                 elem.style.borderSpacing = "24px"
+//             }
+//         }
+//     }
+// }

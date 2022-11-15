@@ -104,7 +104,7 @@ body {
 .backgroundProfile {
     top: 54.7rem;
     position: absolute;
-    /* border: 1px solid white; */
+    border: 1px solid white;
     background: rgb(121, 121, 121, 0.3);
     width: 3.9rem;
     height: 3rem;
@@ -125,6 +125,8 @@ body {
     width: 17rem;
     height: 100%;
     z-index: 0;
+    overflow-y: scroll;
+    resize: vertical;
 }
 
 .Chats,
@@ -147,7 +149,8 @@ body {
 }
 
 .navChat {
-    background-color: rgb(145, 144, 144, 0.4);
+    /* display: flex; */
+    background-color: rgb(46, 46, 46, 0.9);
     position: fixed;
     height: 100px;
     /* border: 1px solid white; */
@@ -187,5 +190,23 @@ body {
 }
 
 .fa-magnifying-glass:hover {
+    color: white;
+}
+
+
+/* chat ids */
+
+#myUL {
+    position: relative;
+    display: flex;
+    top: 7.5rem;
+    overflow-x: scroll;
+    scrollbar-color: white;
+    border: 1px solid white;
+    padding: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
     color: white;
 }

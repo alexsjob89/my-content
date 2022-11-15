@@ -19,14 +19,8 @@ gsap.fromTo(".paraPro ", { y: 120, opacity: 0 }, { y: 0, duration: 2, opacity: 1
 
 // why section
 
-const homeContent = document.querySelectorAll(".home-content");
-const connectWay = document.querySelectorAll(".connectWay");
+// const homeContent = document.querySelectorAll(".home-content");
+// const connectWay = document.querySelectorAll(".connectWay");
 
-const slideLeft = document.querySelector(".left");
-const slideRight = document.querySelector(".right");
-
-function slideLeft() {
-    document.addEventListener("onclick") {
-
-    }
-}
+// const slideLeft = document.querySelector(".left");
+// const slideRight = document.querySelector(".right");
