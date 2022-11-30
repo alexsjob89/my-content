@@ -24,3 +24,11 @@ gsap.fromTo(".paraPro ", { y: 120, opacity: 0 }, { y: 0, duration: 2, opacity: 1
 
 // const slideLeft = document.querySelector(".left");
 // const slideRight = document.querySelector(".right");
+
+let tween = gsap.fromTo(".icon7", {
+    scale: 0.3,
+    duration: 2,
+    x: -60,
+    rotation: 0,
+    ease: "elastic"
+}, { x: 0, duration: 3, scale: 1, rotation: 360 })

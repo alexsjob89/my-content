@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+.btns {
+    position: absolute;
+    display: grid;
+    border: 1px solid black;
+    top: 10rem;
+    left: 10rem;
+    grid-template-columns: auto, auto, auto;
+    width: 20rem;
+    height: 20rem;
+}

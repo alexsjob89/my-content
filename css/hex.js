@@ -155,11 +155,41 @@
 
 // console.log(children);
 
+// document.querySelectorAll(".copy-link").forEach(copyLinkContainer => {
+//     const inputField = copyLinkContainer.querySelector(".copy-link-input");
+//     const copyButton = copyLinkContainer.querySelector(".copy-link-button");
 
-let text = "";
-let i = 0;
-while (i < 5) {
-    text += i + "<br>";
-    i++;
+
+//     inputField.addEventListener("focus", () => inputField.select());
+
+//     copyButton.addEventListener("click", () => {
+//         const text = inputField.value;
+
+//         inputField.select();
+//         navigator.clipboard.writeText(text);
+
+//         inputField.value = "copied!";
+//         setTimeout(() => inputField.value = text, 2000);
+//     });
+// });
+
+
+function initThemeSelector() {
+    const themeSelect = document.getElementById("themeSelect");
+    const themeStylesheetLink = document.getElementById("themeStylesheetLink");
+    const currentTheme = localStorage.getItem("theme") || "default";
+
+    function activateTheme(themeName) {
+        themeStylesheetLink.setAttribute("href", `${themeName}.css`);
+    }
+
+    themeSelect.addEventListener("change", () => {
+        activateTheme(themeSelect.value);
+        localStorage.setItem("theme", themeSelect.value);
+    });
+
+    themeSelect.value = currentTheme;
+    activateTheme(currentTheme);
 }
-console.log(text);
+
+initThemeSelector();

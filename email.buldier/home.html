@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/305c75402b.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/79b0d497e2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="home.css" />
     <style>
 
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <section class="navBar">
+    <section class="navBar" onclick="myFunction()">
         <div class="logo">
             <div class="logoOne">EMAIL</div>
             <div class="logoTwo">-</div>
@@ -33,7 +33,7 @@
         </div>
     </section>
 
-    <section id="HOME">
+    <section id="proContent" class="home-con">
         <div class="home-content">
             <div class="promote">
                 <div class="imgAnim">
@@ -55,30 +55,32 @@
                 </div>
             </div>
         </div>
-        <div class="easiestWay">
-            <div class="connectWay" id="way">
-                <img src="connectimg/ls1b.png" class="con1 imG">
-                <img src="connectimg/ls2b.png" class="con2 imG">
-                <img src="connectimg/ls3b.png" class="con3 imG">
-                <img src="connectimg/ls4b.png" class="con4 imG">
-                <img src="connectimg/ls5b.png" class="con5 imG">
-                <img src="connectimg/ls6b.png" class="con6 imG">
-                <img src="connectimg/ls7b.png" class="con7 imG">
-                <img src="connectimg/ls8b.png" class="con8 imG">
-                <img src="connectimg/ls9b.png" class="con9 imG">
-                <img src="connectimg/ls10b.png" class="con10 imG">
-                <img src="connectimg/ls11b.png" class="con11 imG">
-            </div>
-            <div class="titlePara">
-                <h1 class="easiTitle">The Easiest Way To Connect Your Subscribers.
-                </h1>
-                <p class="easiPara">Design and style should always work toward making you look good and feel good - without a lot of efforts - so you always can get on with the things that truly matter.</p>
-            </div>
-            <button class="tryIt">TRY IT</button>
-        </div>
-        <button class="left"><i class="fa-solid fa-left-long"></i></button>
-        <button class="right"><i class="fa-solid fa-right-long"></i></button>
     </section>
+
+    <section class="easiestWay" id="easiestWay">
+        <div class="connectWay" id="way">
+            <img src="connectimg/ls1b.png" class="con1 imG">
+            <img src="connectimg/ls2b.png" class="con2 imG">
+            <img src="connectimg/ls3b.png" class="con3 imG">
+            <img src="connectimg/ls4b.png" class="con4 imG">
+            <img src="connectimg/ls5b.png" class="con5 imG">
+            <img src="connectimg/ls6b.png" class="con6 imG">
+            <img src="connectimg/ls7b.png" class="con7 imG">
+            <img src="connectimg/ls8b.png" class="con8 imG">
+            <img src="connectimg/ls9b.png" class="con9 imG">
+            <img src="connectimg/ls10b.png" class="con10 imG">
+            <img src="connectimg/ls11b.png" class="con11 imG">
+        </div>
+        <div class="titlePara">
+            <h1 class="easiTitle">The Easiest Way To Connect Your Subscribers.
+            </h1>
+            <p class="easiPara">Design and style should always work toward making you look good and feel good - without a lot of efforts - so you always can get on with the things that truly matter.</p>
+        </div>
+        <button class="tryIt">TRY IT</button>
+        </div>
+    </section>
+    <!-- <button id="left" onclick="leftFunction()"><i class="fa-solid fa-left-long"></i></button>
+    <button id="right" onclick="rightFunction()"><i class="fa-solid fa-right-long"></i></button> -->
 
 
     <section class="whyChose" id="WHY?">
@@ -90,30 +92,145 @@
                 <div class="lineRight"></div>
             </div>
             <div class="whyBoxes" id="whyBoxes">
-                <div class="box One" id="
+                <div class="boxW" id="
                 One">
                     <h1 class="A">Responsive Email Templates</h1>
                     <p class="Aa">Keep your money,do not spend a lot of money.Promote your business the best, the easy and cheap way
                     </p>
-                    <button class="discover Ab">Discover more</button>
+                    <button class="discoverAb">Discover more</button>
                 </div>
-                <div class="box two" id="Two">
-                    <h1 class="B">Easy customisation</h1>
-                    <p class="Bb">You can customize the Emails' as you desire to match your needs and design. All the important bits and parts are commented throughout the code.
+                <div class="boxW" id="Two">
+                    <h1 class="A">Easy customisation</h1>
+                    <p class="Aa">You can customize the Emails' as you desire to match your needs and design. All the important bits and parts are commented throughout the code.
                     </p>
-                    <button class="discover Bc">Discover more</button>
+                    <button class="discoverBc">Discover more</button>
                 </div>
-                <div class="box three" id="Three">
-                    <h1 class="C">24/7 Amazing Support</h1>
-                    <p class="Cc">Need help or guidance? Don't hessitate to contact our support and we will try our best to respond to your request within 24 hours or less
+                <div class="boxW" id="Three">
+                    <h1 class="A">24/7 Amazing Support</h1>
+                    <p class="Aa">Need help or guidance? Don't hessitate to contact our support and we will try our best to respond to your request within 24 hours or less
                     </p>
-                    <button class="discover Cd">Discover more</button>
+                    <button class="discoverCd">Discover more</button>
                 </div>
             </div>
         </div>
 
     </section>
 
+    <section class="increaseSub">
+        <div class="icrease-content">
+            <div class="imgBuild">
+                <img src="builderimg/image_4.png" width="700" class="builderImg">
+            </div>
+            <div class="subConBox">
+                <div class="subscribeBox">
+                    <h1 class="subTitle">Increase your subscribers with emails</h1>
+                    <p class="subPara">Display your data, and other information with good design. Also , create your emails very easily</p>
+                </div>
+                <div class="iconSub">
+                    <img src="builderimg/icon7.png" width="100" class="icon7">
+                    <img src="builderimg/icon8.png" width="100" class="icon7">
+                    <img src="builderimg/icon9.png" width="100" class="icon7">
+                </div>
+            </div>
+            <div class="pagaImgIcon">
+                <div class="paraImg">Promote your business very easily</div>
+                <div class="paraImg">Get more subcribers</div>
+                <div class="paraImg">Increase your business at least time</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="screenShots">
+        <div class="headerScreen">
+            <h1 class="screenTitle">ScreenShots</h1>
+        </div>
+        <div class="icon-section">
+            <i class="fa-solid fa-star"></i>
+            <div class="lineLeft"></div>
+            <div class="lineRight"></div>
+        </div>
+        <div class="screenImgBox">
+            <img src="builderimg/pic1.png" width="500" height="300" class="pics">
+            <img src="builderimg/pic2.png" width="500" height="300" class="pics">
+            <img src="builderimg/pic3.png" width="500" height="300" class="pics">
+            <img src="builderimg/pic4.png" width="500" height="300" class="pics">
+            <img src="builderimg/pic5.png" width="500" height="300" class="pics">
+            <img src="builderimg/pic6.png" width="500" height="300" class="pics">
+        </div>
+    </section>
+
+    <section class="videoBuilder">
+        <div class="newsletter">
+            <h1 class="newsTitle">Create email newsletter with Builder
+                <p class="newsPara">If you know HTML or prefer to design your own emails,Bal - Email Newsletter Builder is an excellent newsletter builder for you.Bal - Email Newsletter Builder also offers about 3 templates to help beginners send professional-looking emails</p>
+                <button class="newsButton">Discover More</button>
+            </h1>
+            <iframe width="555" height="312" src="https://www.youtube.com/embed/5cc-gV2rm2w" title="How to create Email Newsletter in Bal - Email Newsletter Builder" frameborder="20" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="promnoteBusiness">
+        <img src="builderimg/image_5.png" alt="" class="promoteImg">
+        <div class="probote-content">
+            <div class="ptomoteTitle">Promote your business very easily</div>
+            <div class="promotePara">Display your data, and other information with good design. Also , create your emails very easily</div>
+            <ul>
+                <img src="builderimg/pngwing.com-2.png" class="check" width="50px">
+                <div class="more">Increase your business at least time a.</div>
+                <img src="builderimg/pngwing.com-2.png" class="check" width="50px">
+                <div class="more">Get more subcriberssubcribers</div>
+            </ul>
+            <button class="promoteButton">Discover More</button>
+        </div>
+    </section>
+
+    <section class="amazingFeature">
+        <div class="amzTitleIc">
+            <h1 class="amazingTitle">Amazing Features</h1>
+            <div class="icon-section">
+                <i class="fa-solid fa-star"></i>
+                <div class="lineLeft"></div>
+                <div class="lineRight"></div>
+            </div>
+        </div>
+        <div class="amazing-content">
+            <div class="amazboxOne-content">
+                <div class="amazBoxOne">
+                    <img src="builderimg/icon2.png" alt="" class="icOne">
+                    <p class="amOne">Modern Design</p>
+                    <p class="bmOne">With 27 different elements<br> create your own Creative Email Template</p>
+                </div>
+                <div class="amazBoxOne">
+                    <img src="builderimg/icon8.png" alt="" class="icOne">
+                    <p class="amOne">Documentation Included</p>
+                    <p class="bmOne">Explained how to install in your <br>server, which files required and other settings</p>
+                </div>
+                <div class="amazBoxOne">
+                    <img src="builderimg/icon9.png" alt="" class="icOne">
+                    <p class="amOne">Well Explained Code</p>
+                    <p class="bmOne">Every codes have comments for <br>explaining how to use and what doing those codes.<br>Very easy installition in your server</p>
+                </div>
+            </div>
+            <div class="amazBox-content">
+                <div class="amazBox">
+                    <img src="builderimg/icon3.png" alt="" class="ic">
+                    <p class="am">Export</p>
+                    <p class="bm">Export Email NewsLetters any time</p>
+                </div>
+                <div class="amazBox">
+                    <img src="builderimg/icon4.png" alt="" class="ic">
+                    <p class="am">Quick Preview</p>
+                    <p class="bm">Preview your Email NewsLetter before<br> exporting or when you want</p>
+                </div>
+                <div class="amazBox">
+                    <img src="builderimg/icon0.png" alt="" class="ic">
+                    <p class="am">24/7 Support</p>
+                    <p class="bm">Need help or guidance? Don't<br> hessitate to contact our support and we will try our<br> best to respond to your request within 24 hours or less.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
