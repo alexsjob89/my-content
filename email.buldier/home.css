@@ -586,17 +586,16 @@ a:hover {
     background: url('builderimg/pexels-felix-mittermeier-1146134.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-x: hidden;
-    overflow-x: scroll;
+    overflow: hidden;
 }
 
 .screenImgBox {
-    border: 1px solid black;
-    display: flex;
+    display: grid;
     grid-template-columns: auto auto auto;
     position: absolute;
     top: 25rem;
     align-items: center;
+    height: auto;
 }
 
 .pics {
@@ -612,8 +611,11 @@ a:hover {
     transition: 1s;
 }
 
-.screenTitle {
+.amzTitleIc {
     position: fixed;
+}
+
+.screenTitle {
     color: white;
     text-align: center;
     margin-top: 10rem;
@@ -769,8 +771,9 @@ ul {
     position: relative;
     top: 220rem;
     justify-content: center;
-    height: 100rem;
-    border: 1px solid black;
+    height: 75rem;
+    /* border: 1px solid black; */
+    margin: 40px;
 }
 
 .amazingTitle {
@@ -778,30 +781,235 @@ ul {
     left: 40rem;
     margin-top: -50px;
     font-size: 50px;
+    width: 30rem;
 }
 
 .amazing-content {
     display: flex;
-    border: 1px solid black;
-    margin-top: 80px;
-    height: 100rem;
+    /* border: 1px solid black; */
+    margin-top: 0px;
+    height: 68rem;
+    padding-top: -3rem;
+}
+
+
+/* amazing box one starts here */
+
+.amzTitleIc {
+    align-items: center;
+    position: relative;
+    /* border: 1px solid black; */
+    margin-left: -2.6rem;
+    margin-top: -8rem;
 }
 
 .amazboxOne-content {
+    /* justify-content: flex-end; */
     position: absolute;
     display: grid;
     grid-template-columns: auto;
-    border: 1px solid black;
-    height: fit-content;
+    /* border: 1px solid black; */
+    height: auto;
     width: 45%;
 }
 
+.amazBoxOne {
+    background: white;
+    /* border: 1px solid black; */
+    /* border-right: 1px solid rgb(166, 166, 166);
+    border-bottom: 1px solid rgb(166, 166, 166); */
+    margin-top: 8rem;
+    box-shadow: 4px 6px 11px 5px rgba(181, 181, 181, 0.59);
+    z-index: 2;
+    overflow: hidden;
+}
+
+.amOne,
+.bmOne {
+    position: relative;
+    text-align: right;
+    margin-top: 40px;
+    margin-left: -10rem;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-right: 180px;
+    width: auto;
+    line-height: 30px;
+    background-clip: content-box;
+}
+
+.amOne {
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.bmOne {
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.icOne {
+    position: relative;
+    float: right;
+    padding: 40px;
+    z-index: 3;
+    background: white;
+}
+
+.amazBoxOne::after {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    margin-left: 43.5rem;
+    margin-top: -5rem;
+    z-index: 1;
+    box-shadow: 4px 6px 11px 5px rgba(181, 181, 181, 0.59);
+    background-clip: border-box;
+    background-color: white;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+
+/* amazing box two starts here  */
+
 .amazBox-content {
+    justify-content: flex-start;
     position: absolute;
     display: grid;
     grid-template-columns: auto;
-    border: 1px solid black;
-    height: fit-content;
-    right: 0px;
+    /* border: 1px solid black; */
+    height: auto;
     width: 45%;
+    right: 0px;
+}
+
+.amazBox {
+    background: white;
+    /* border: 1px solid black; */
+    margin-top: 8rem;
+    box-shadow: -4px 6px 11px 5px rgba(181, 181, 181, 0.59);
+    z-index: 2;
+    overflow: hidden;
+}
+
+.Last {
+    height: 13.1rem;
+}
+
+.am,
+.bm {
+    position: relative;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: -10rem;
+    /* border: 1px solid black; */
+    margin: 0%;
+    margin-right: 180px;
+    width: auto;
+    line-height: 30px;
+    background-clip: content-box;
+}
+
+.am {
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.bm {
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.ic {
+    position: relative;
+    float: left;
+    padding: 40px;
+    z-index: 3;
+    background: white;
+}
+
+.amazBox::before {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    /* border: 1px solid black; */
+    right: 43.5rem;
+    margin-top: 4.8rem;
+    z-index: 1;
+    box-shadow: -4px 6px 11px 5px rgba(181, 181, 181, 0.59);
+    background-color: white;
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+
+.Last {
+    height: 12.7rem;
+}
+
+
+/* section lines */
+
+.amazLines {
+    position: absolute;
+    left: 49.9%;
+    top: 10.6rem;
+}
+
+.lines {
+    position: relative;
+    border-left: 2px solid rgb(190, 189, 189);
+    height: 15rem;
+    margin-left: 49.6%;
+    margin-top: 5rem;
+}
+
+.extraS {
+    margin-top: 0px;
+    height: 5.5rem;
+}
+
+.short {
+    height: 18rem;
+    margin-top: 3.1rem;
+}
+
+.medium {
+    height: 18rem;
+    margin-top: 2.8rem;
+}
+
+.long {
+    margin-top: 2.6rem;
+    height: 5.3rem;
+}
+
+.amazCircles {
+    position: absolute;
+    /* border: 1px solid black; */
+    width: auto;
+    height: fit-content;
+    left: 49%;
+    top: 16.7rem;
+}
+
+.circles {
+    background-color: #5eb3c2;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.oneC {
+    margin-top: 19rem;
+}
+
+.oneD {
+    margin-top: 19rem;
 }

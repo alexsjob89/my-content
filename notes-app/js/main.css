@@ -1,11 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
-.btns {
+.square {
+    height: 50px;
+    width: 50px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
     position: absolute;
-    display: grid;
+    left: 39.8rem;
+    top: 30rem;
+    background-clip: border-box;
+    background-color: white;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.join {
+    height: 80px;
+    width: 100px;
     border: 1px solid black;
-    top: 10rem;
-    left: 10rem;
-    grid-template-columns: auto, auto, auto;
-    width: 20rem;
-    height: 20rem;
+    position: absolute;
+    left: 35rem;
+    top: 29rem;
+    background-color: white;
 }
