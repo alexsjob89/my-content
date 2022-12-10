@@ -258,6 +258,9 @@
     .slideImg1 {
         transition: 3s;
         transform: translate();
+        border: 1px solid rgb(177, 177, 177);
+        padding: 10px;
+        border-radius: 8px;
     }
     
     .fade {
@@ -363,3 +366,186 @@
         bottom: -4rem;
         /* border: 1px solid black; */
     }
+    /* items list starts here */
+    
+    .headerFeat {
+        position: relative;
+        margin-bottom: 50px;
+        margin-left: 14rem;
+        font-size: 30px;
+    }
+    
+    .featuredCards {
+        position: absolute;
+        z-index: 1000;
+        /* border: var(--border); */
+        border-style: 2px double;
+        width: 100%;
+        top: 65rem;
+        border-radius: 10px;
+    }
+    
+    .featured {
+        /* border: var(--border); */
+        height: 160rem;
+        position: relative;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        /* margin: 0%;
+        padding: 0%; */
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .box-items {
+        position: relative;
+        /* border: 1px solid rgb(147, 147, 147); */
+        box-shadow: 0px 0px 12px 0px rgba(145, 145, 145, 0.6);
+        height: 35rem;
+        width: 20rem;
+        margin: 40px;
+        flex-wrap: wrap;
+        border-radius: 6px;
+        align-items: center;
+        /* justify-content: center;
+        text-align: center; */
+        transition: ease-in-out 3s;
+    }
+    
+    .box-items:hover {
+        transition: 2s;
+        transform: scale(1.08);
+    }
+    
+    .text-price {
+        position: relative;
+        margin-top: 70px;
+        height: 51%;
+    }
+    
+    .buttonLink {
+        display: flex;
+        position: absolute;
+        /* border: var(--border); */
+        bottom: 0%;
+        width: auto;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+    
+    .addTo,
+    .addWishList,
+    .compareBtn {
+        border: 1px solid rgb(147, 147, 147);
+        position: relative;
+        padding: 17px;
+        outline: none;
+        margin-right: -1.2px;
+        background: lightgrey;
+        color: black;
+        ;
+        cursor: pointer;
+    }
+    
+    .addWishList:hover {
+        transition: 1s;
+        background-color: white;
+        border: 1px solid rgb(67, 1, 1);
+    }
+    
+    .addTo:hover {
+        transition: 1s;
+        background-color: white;
+        border: 1px solid rgb(67, 1, 1);
+    }
+    
+    .compareBtn:hover {
+        transition: 1s;
+        background-color: white;
+        border: 1px solid rgb(67, 1, 1);
+    }
+    
+    .compareBtn {
+        border-bottom-right-radius: 6px;
+    }
+    
+    .addTo {
+        width: 14.4rem;
+        margin-left: -1px;
+        border-bottom-left-radius: 6px;
+    }
+    
+    .imgShirt {
+        /* border: 1px solid lightgrey; */
+        position: relative;
+        margin-left: 3.7rem;
+        width: fit-content;
+        background-color: white;
+        transition: ease-in-out 3s;
+        /* box-shadow: 0px 0px 12px 0px rgba(145, 145, 145, 0.6); */
+    }
+    
+    .imgShirt:hover {
+        transition: 1.5s;
+        margin-top: 50px;
+        transform: scale(1.8);
+        box-shadow: 0px 0px 12px 0px rgba(145, 145, 145, 0.6);
+    }
+    
+    .paraFeat {
+        margin-top: 20px;
+        line-height: 20px;
+    }
+    
+    .featTitle,
+    .paraFeat {
+        /* border: var(--border); */
+        margin: 20px;
+    }
+    
+    .priceFeat {
+        position: absolute;
+        bottom: 70px;
+        left: 20px;
+    }
+    /* here starts bottom slidebar */
+    
+    .swiper-box {
+        border: var(--border);
+        position: absolute;
+        top: 238rem;
+        width: 100rem;
+        margin-left: 12rem;
+        height: 10rem;
+    }
+    
+    .swiper-wrapper {
+        display: flex;
+        height: 10rem;
+    }
+    
+    .swiper-slide {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .swiper-pagination {
+        position: absolute;
+        display: flex;
+        border: var(--border);
+        left: 40%;
+        top: 100%;
+    }
+    
+    .dotSlideB {
+        /* border: var(--border); */
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        transition: background-color 0.6s ease-out;
+    }
+    /* .swiper-button-next {
+        right: 0%;
+    } */
