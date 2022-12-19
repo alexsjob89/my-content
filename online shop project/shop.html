@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/79b0d497e2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js">
-    </script>
+
+
     <link rel="stylesheet" href="shop.css" />
     <title>online shop</title>
 </head>
@@ -29,7 +28,7 @@
             <!-- finished currency section -->
             <li class="number"><i class="fa-solid fa-phone"></i>123456789</li>
             <!-- accounts section -->
-            <li class="account" id="account"><i class="fa fa-user"></i> My account<i class="fa-sharp fa-solid fa-caret-down"></i>
+            <div class="account" id="account"><i class="fa fa-user"></i> My account<i class="fa-sharp fa-solid fa-caret-down"></i>
                 <ul class="accontsLi">
                     <a href="/register.html">
                         <li class="acconts">register</li>
@@ -38,7 +37,7 @@
                         <li class="acconts">login</li>
                     </a>
                 </ul>
-            </li>
+            </div>
             <!-- finished accounts section -->
 
             <a href="#wishlist.html">
@@ -382,27 +381,36 @@
     </section>
 
     <section class="swiper-box">
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <img src="slidebarbottom/market-130x100.png" width="50" class="swiper-slide">
-                <img src="slidebarbottom/opencart-130x100.png" width="50" class="swiper-slide">
-                <img src="slidebarbottom/prestashop-130x100.png" width="50" class="swiper-slide">
-                <img src="slidebarbottom/ultimate-130x100.png" width="50" class="swiper-slide">
-                <img src="slidebarbottom/wordpress-130x100.png" width="50" class="swiper-slide">
+        <div class="wrapper" id="wrapper">
+            <div class="image">
+                <img src="slidebarbottom/market-130x100.png" class="swiper-slide imgA">
             </div>
-            <!-- <div class="swiper-pagination">
+            <div class="image">
+                <img src="slidebarbottom/opencart-130x100.png" class="swiper-slide imgB">
+            </div>
+            <div class="image">
+                <img src="slidebarbottom/prestashop-130x100.png" class="swiper-slide imgc">
+            </div>
+            <div class="image">
+                <img src="slidebarbottom/ultimate-130x100.png" class="swiper-slide imgD">
+            </div>
+            <div class="image">
+                <img src="slidebarbottom/wordpress-130x100.png" class="swiper-slide imgE">
+            </div>
+        </div>
+        <!-- <div class="swiper-pagination">
             <div class="dotSlideB"></div>
             <div class="dotSlideB"></div>
             <div class="dotSlideB"></div>
             <div class="dotSlideB"></div>
             <div class="dotSlideB"></div>
         </div> -->
-            <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-pagination"></div>
 
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
 
-            <div class="swiper-scrollbar"></div>
+            <div class="swiper-scrollbar"></div> -->
 
 
         </div>

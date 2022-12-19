@@ -1,24 +1,151 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
-.square {
-    height: 50px;
-    width: 50px;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
+
+/* .boxes-content {
     position: absolute;
-    left: 39.8rem;
-    top: 30rem;
-    background-clip: border-box;
-    background-color: white;
-    transform: rotate(45deg);
-    z-index: 1;
+    border: 1px solid black;
+    top: 15rem;
+    left: 30rem;
 }
 
-.join {
-    height: 80px;
-    width: 100px;
-    border: 1px solid black;
+.box {
     position: absolute;
-    left: 35rem;
-    top: 29rem;
-    background-color: white;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    display: none;
+    width: 60rem;
+    height: 30rem;
+    border-radius: 13px;
+}
+
+.buttons-box {
+    border: 1px solid black;
+    width: 60rem;
+    height: 40px;
+    position: absolute;
+    left: 30rem;
+    top: 12rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+}
+
+.btnOne {
+    position: relative;
+    margin-left: 80px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+p {
+    line-height: 40px;
+}
+
+.Two-box {
+    background-color: black;
+    color: white;
+}
+
+.Three-box {
+    display: none;
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.Four-box {
+    display: none;
+    background-color: rgba(0, 47, 255, 0.622);
+    color: white;
+}
+
+.Five-box {
+    display: none;
+    background-color: rgb(255, 251, 0);
+    color: black;
+} */
+
+
+/* #content {
+    position: absolute;
+    width: 20rem;
+    max-height: 25rem;
+    font-size: 20px;
+    box-shadow: 0px 0px 12px -2px rgba(178, 178, 178, 0.87);
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+    transition: max-height 1.7s;
+    top: 3rem;
+    left: 27rem;
+    overflow: hidden;
+}
+
+
+/* #content {
+    position: absolute;
+    border: 1px solid black;
+    max-height: 25;
+    width: 20rem;
+    left: 40%;
+} */
+
+
+/* p {
+    padding: 15px;
+} */
+
+
+/* #btn {
+    position: absolute;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 8px;
+    background: none;
+    background-color: rgb(166, 39, 39, 0.6);
+    border: none;
+    box-shadow: 0px 0px 12px -2px rgba(178, 178, 178, 0.87);
+    margin-top: auto;
+    margin-left: 26%;
+    display: block;
+    top: 30rem;
+}
+
+#content,
+#btn.open {
+    max-height: 45rem;
+    width: 20rem;
+    transition: max-height 1.7s;
+}  */
+
+body {
+    background-color: chocolate;
+}
+
+ul {
+    display: flex;
+    text-align: center;
+    border: 1px solid white;
+    width: 50rem;
+    height: 10rem;
+    background-color: black;
+}
+
+li {
+    list-style: square;
+    margin-left: 40px;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 20px;
+    width: 90px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+h1 {
+    color: white;
+    text-align: center;
 }
