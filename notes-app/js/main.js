@@ -96,25 +96,115 @@
 // main.innerHTML = htmlString;
 
 
-const ul = document.querySelector("ul");
-const li = document.createElement("li");
-const lione = document.createElement("li");
-const litwo = document.createElement("li");
-const lithree = document.createElement("li");
-const H1 = document.createElement("h1");
+// const ul = document.querySelector("ul");
+// const li = document.createElement("li");
+// const lione = document.createElement("li");
+// const litwo = document.createElement("li");
+// const lithree = document.createElement("li");
+// const H1 = document.createElement("h1");
 
-ul.append(H1, li, lione, litwo, lithree);
+// ul.append(H1, li);
 
-H1.innerText = "movieBox";
-li.innerText = "movies";
-lione.innerText = "foodBox";
-litwo.innerText = "drinks";
-lithree.innerText = "fun";
+// H1.innerText = "movieBox";
+// li.innerText = "movies";
+// lione.innerText = "foodBox";
+// litwo.innerText = "drinks";
+// lithree.innerText = "fun";
 
-ul.classList.add("main-list-header");
-li.classList.add("main-list");
-lione.classList.add("main-one");
-litwo.classList.add("main-two");
-lithree.classList.add("main-three");
+// ul.classList.add("main-list-header");
+// li.classList.add("main-list");
+// lione.classList.add("main-one");
+// litwo.classList.add("main-two");
+// lithree.classList.add("main-three");
 
-console.log(ul);
+
+// const list = document.querySelectorAll("li");
+// const main = document.querySelector("#main");
+// const changeBackground = document.querySelector(".box-1");
+
+// function changeBgColor() {
+//     changeBackground.style.backgroundColor = "blue";
+// }
+
+// function changeBgColorNone() {
+//     changeBackground.style.background = "none";
+// }
+
+// function changeBorderColor() {
+//     changeBackground.style.border = "2px solid red";
+// }
+
+// function changeBgRed() {
+//     main.style.border = "2px solid red";
+
+// }
+
+
+
+// changeBackground.addEventListener("click", changeBgColor);
+
+// changeBackground.addEventListener("mouseleave", changeBgColorNone);
+
+// changeBackground.addEventListener("focus", changeBorderColor);
+
+
+// const para = document.querySelector("#para");
+
+// para.classList.add("bold");
+
+// console.log(para);
+
+
+// const buttonOne = document.getElementById("buttonOne");
+// const buttonTwo = document.getElementById("buttonTwo");
+// const buttonThree = document.getElementById("buttonThree");
+
+// let boxOne = document.getElementById("box-one");
+// let boxTwo = document.getElementById("box-two");
+// let boxThree = document.getElementById("box-three");
+
+// buttonOne.addEventListener("click", function() {
+
+//     if (boxOne.style.display === "none") {
+//         boxOne.style.display = "block"
+//     } else {
+//         boxOne.style.display = "none"
+//     }
+
+// })
+
+// buttonTwo.addEventListener("click", function() {
+//     if (boxTwo.style.display === "none") {
+//         boxTwo.style.display = "block"
+//     }
+// })
+
+// buttonThree.addEventListener("click", function() {
+//     if (boxThree.style.display === "none") {
+//         boxThree.style.display = "block"
+//     }
+// })
+
+// window.addEventListener("mouseup", function(event) {
+//     let boxOne = document.getElementById("box-one");
+//     if (event.target != boxOne && event.target.parentNode != boxOne) {
+//         boxOne.style.display = "block";
+//     }
+// })
+
+// window.addEventListener("mouseup", function(event) {
+//     let boxTwo = document.getElementById("box-two");
+//     if (event.target != boxTwo && event.target.parentNode != boxTwo) {
+//         boxTwo.style.display = "none";
+//     }
+// })
+let boxArry = ["box-one", "box-two", "box-three"]
+window.addEventListener("mouseup", function(event) {
+
+    for (let i = 0; i < boxArry.length; i++) {
+        let box = document.getElementById(boxArry[i]);
+        if (event.target != box && event.target.parentNode != box) {
+            box.style.display = "none";
+        }
+    }
+})

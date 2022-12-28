@@ -119,7 +119,8 @@ p {
     transition: max-height 1.7s;
 }  */
 
-body {
+
+/* body {
     background-color: chocolate;
 }
 
@@ -148,4 +149,174 @@ li {
 h1 {
     color: white;
     text-align: center;
+} */
+
+
+/* * {
+    list-style: none;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    background-image: url('/4kwallpaper/Must\ Have\ 4K\ UHD\ Landscapes\ wallpapers\ June\ 2021\ \(TeNeBrA\)_01\ \(14\).jpg');
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    width: 70rem;
+    height: 50rem;
+    top: 0%;
+    position: absolute;
+    left: 24rem;
+}
+
+.main {
+    display: none;
+    position: absolute;
+    top: 23rem;
+    border: 1px solid black;
+    left: 19.5rem;
+}
+
+.containers {
+    position: absolute;
+    display: flex;
+    border: 1px solid black;
+    width: 40rem;
+    padding: 40px;
+    top: 10rem;
+    left: 15rem;
+    background-color: rgb(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+li {
+    color: white;
+    text-align: center;
+    margin-left: -30px;
+    font-size: 40px;
+}
+
+.box {
+    color: white;
+    position: relative;
+    margin-left: 1rem;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    border: 1px solid white;
+    width: 12rem;
+    height: fit-content;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.btn {
+    font-size: 30px;
+    padding: 0px 20px;
+    border-radius: 8px;
+    text-align: center;
+    background: none;
+    color: white;
+} */
+
+
+/* body {
+    background-color: black;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 80rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+#main {
+    margin: 0%;
+    padding: 0%;
+    border: 8px solid rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 15rem;
+    height: 25.7rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+li {
+    list-style-type: none;
+    font-size: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 100%;
+    color: white;
+    line-height: 5rem;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+li:hover {
+    transform: scale(1.04);
+} */
+
+
+/* .bold {
+    font-size: 40px;
+    font-weight: 900;
+    color: red;
+} */
+
+#buttonOne {
+    font-size: 40px;
+    border-radius: 8px;
+}
+
+#buttonTwo {
+    font-size: 40px;
+    border-radius: 8px;
+}
+
+#buttonThree {
+    font-size: 40px;
+    border-radius: 8px;
+}
+
+.box-one {
+    position: absolute;
+    border: 1px solid black;
+    width: 30rem;
+    height: 30rem;
+    text-align: center;
+    display: block;
+    background-color: red;
+    color: white;
+}
+
+.box-two {
+    position: absolute;
+    border: 1px solid black;
+    width: 30rem;
+    height: 30rem;
+    text-align: center;
+    background-color: blue;
+    color: rgb(255, 0, 0);
+    display: none;
+}
+
+.box-three {
+    position: absolute;
+    border: 1px solid black;
+    width: 30rem;
+    height: 30rem;
+    text-align: center;
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    display: none;
 }
